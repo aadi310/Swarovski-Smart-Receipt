@@ -2616,36 +2616,19 @@ Powered by RDEP
 <div className="bg-white rounded-[28px] border border-[#E8E8E8] shadow-sm mx-3 mt-4 p-4">
 
   {/* Header */}
-  <div className="flex items-center justify-between mb-5">
+  <div className="mb-5">
 
-    <div>
+    <div className="text-[20px] font-light text-[#111111] tracking-[0.01em]">
 
-      <div className="text-[20px] font-light text-[#111111] tracking-[0.01em]">
-
-        Recommended For You
-
-      </div>
-
-      <div className="text-[13px] text-[#666666] mt-1">
-
-        Discover more from Swarovski collections
-
-      </div>
+      Recommended For You
 
     </div>
 
+    <div className="text-[13px] text-[#666666] mt-1">
 
-    {/* Shop All */}
-    <a
-      href="https://www.swarovski.com/en-IN/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-[11px] uppercase tracking-[0.16em] text-[#111111] font-medium"
-    >
+      Discover more from Swarovski collections
 
-      Shop All
-
-    </a>
+    </div>
 
   </div>
 
@@ -2687,54 +2670,6 @@ Powered by RDEP
         {/* CTA */}
         <a
           href="https://www.swarovski.com/en-IN/p-5469989/Swan-necklace-Swan-Pink-Rose-gold-tone-plated/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 flex items-center justify-center h-10 rounded-full bg-[#111111] text-white text-[11px] font-medium tracking-[0.08em] uppercase"
-        >
-
-          Shop Now
-
-        </a>
-
-      </div>
-
-    </div>
-
-
-    {/* Product 2 */}
-    <div className="bg-[#FAFAFA] border border-[#ECECEC] rounded-[24px] overflow-hidden">
-
-      {/* Image */}
-      <div className="aspect-square bg-white flex items-center justify-center p-4">
-
-        <img
-          src="/images/design-mode/product-2.png"
-          alt="Curiosa Bangle Watch"
-          className="w-full h-full object-contain"
-        />
-
-      </div>
-
-
-      {/* Content */}
-      <div className="p-4">
-
-        <div className="text-[14px] font-medium text-[#111111] leading-snug min-h-[38px]">
-
-          Curiosa Bangle Watch
-
-        </div>
-
-        <div className="text-[14px] text-[#111111] mt-2">
-
-          ₹ 53,000.00
-
-        </div>
-
-
-        {/* CTA */}
-        <a
-          href="https://www.swarovski.com/en-IN/p-M5724515/Curiosa-bangle-watch-Crystal-bracelet-Silver-tone-Stainless-steel/?variantID=5724515"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-4 flex items-center justify-center h-10 rounded-full bg-[#111111] text-white text-[11px] font-medium tracking-[0.08em] uppercase"
@@ -2797,6 +2732,54 @@ Powered by RDEP
     </div>
 
 
+    {/* Product 2 */}
+    <div className="bg-[#FAFAFA] border border-[#ECECEC] rounded-[24px] overflow-hidden">
+
+      {/* Image */}
+      <div className="aspect-square bg-white flex items-center justify-center p-4">
+
+        <img
+          src="/images/design-mode/product-2.png"
+          alt="Curiosa Bangle Watch"
+          className="w-full h-full object-contain"
+        />
+
+      </div>
+
+
+      {/* Content */}
+      <div className="p-4">
+
+        <div className="text-[14px] font-medium text-[#111111] leading-snug min-h-[38px]">
+
+          Curiosa Bangle Watch
+
+        </div>
+
+        <div className="text-[14px] text-[#111111] mt-2">
+
+          ₹ 53,000.00
+
+        </div>
+
+
+        {/* CTA */}
+        <a
+          href="https://www.swarovski.com/en-IN/p-M5724515/Curiosa-bangle-watch-Crystal-bracelet-Silver-tone-Stainless-steel/?variantID=5724515"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 flex items-center justify-center h-10 rounded-full bg-[#111111] text-white text-[11px] font-medium tracking-[0.08em] uppercase"
+        >
+
+          Shop Now
+
+        </a>
+
+      </div>
+
+    </div>
+
+
     {/* Product 4 */}
     <div className="bg-[#FAFAFA] border border-[#ECECEC] rounded-[24px] overflow-hidden">
 
@@ -2817,7 +2800,7 @@ Powered by RDEP
 
         <div className="text-[14px] font-medium text-[#111111] leading-snug min-h-[38px]">
 
-          High iPhone 17 Pro Max Smartphone Case
+          iPhone 17 Pro Max Smartphone Case
 
         </div>
 
@@ -2846,33 +2829,53 @@ Powered by RDEP
 
   </div>
 
+
+  {/* Shop All CTA */}
+  <div className="mt-5">
+
+    <a
+      href="https://www.swarovski.com/en-IN/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center justify-center w-full h-12 rounded-[22px] bg-[#111111] text-white text-[13px] font-medium tracking-[0.08em] uppercase"
+    >
+
+      Shop All Collections
+
+    </a>
+
+  </div>
+
 </div>
 
-          {/* Receipt Actions */}
-<div className="bg-white rounded-2xl border border-[#E6E1EE] shadow-md mx-3 mt-4 p-4">
+      {/* Receipt Actions */}
+<div className="bg-white rounded-[28px] border border-[#E8E8E8] shadow-sm mx-3 mt-4 p-4">
 
   {/* Header */}
-  <div className="flex items-center justify-between mb-4">
+  <div className="flex items-center justify-between mb-5">
 
     <div className="flex items-center">
 
-      <div className="bg-[#2E1A47] p-2.5 rounded-xl mr-3 shadow-sm">
+      {/* Icon */}
+      <div className="bg-[#111111] p-2.5 rounded-2xl mr-3">
 
-        <Receipt className="h-4 w-4 text-[#C8A96B]" />
+        <Receipt className="h-4 w-4 text-white" />
 
       </div>
 
+
+      {/* Text */}
       <div>
 
-        <h3 className="text-sm font-semibold text-[#1F1B24]">
+        <h3 className="text-[18px] font-light text-[#111111] tracking-[0.01em]">
 
           Receipt Actions
 
         </h3>
 
-        <div className="text-[11px] text-[#6B6475] mt-0.5">
+        <div className="text-[13px] text-[#666666] mt-1">
 
-          Access and manage your purchase receipt
+          Access and manage your digital Swarovski receipt
 
         </div>
 
@@ -2890,16 +2893,16 @@ Powered by RDEP
     <button
       ref={historyButtonRef}
       onClick={handleTransactionHistoryOpen}
-      className="flex flex-col items-center justify-center bg-[#F7F5FA] border border-[#E6E1EE] rounded-2xl py-4 active:scale-[0.98] transition"
+      className="flex flex-col items-center justify-center bg-[#FAFAFA] border border-[#ECECEC] rounded-[22px] py-4 active:scale-[0.98] transition"
     >
 
-      <div className="w-10 h-10 rounded-xl bg-[#2E1A47]/10 flex items-center justify-center mb-2">
+      <div className="w-11 h-11 rounded-2xl bg-[#111111]/5 flex items-center justify-center mb-3">
 
-        <History className="h-5 w-5 text-[#2E1A47]" />
+        <History className="h-5 w-5 text-[#111111]" />
 
       </div>
 
-      <span className="text-[11px] font-medium text-[#1F1B24]">
+      <span className="text-[11px] font-medium text-[#111111] tracking-[0.08em] uppercase">
 
         History
 
@@ -2911,16 +2914,16 @@ Powered by RDEP
     {/* Email */}
     <button
       onClick={handleEmailReceipt}
-      className="flex flex-col items-center justify-center bg-[#F7F5FA] border border-[#E6E1EE] rounded-2xl py-4 active:scale-[0.98] transition"
+      className="flex flex-col items-center justify-center bg-[#FAFAFA] border border-[#ECECEC] rounded-[22px] py-4 active:scale-[0.98] transition"
     >
 
-      <div className="w-10 h-10 rounded-xl bg-[#2E1A47]/10 flex items-center justify-center mb-2">
+      <div className="w-11 h-11 rounded-2xl bg-[#111111]/5 flex items-center justify-center mb-3">
 
-        <Mail className="h-5 w-5 text-[#2E1A47]" />
+        <Mail className="h-5 w-5 text-[#111111]" />
 
       </div>
 
-      <span className="text-[11px] font-medium text-[#1F1B24]">
+      <span className="text-[11px] font-medium text-[#111111] tracking-[0.08em] uppercase">
 
         Email
 
@@ -2932,16 +2935,16 @@ Powered by RDEP
     {/* Download */}
     <button
       onClick={handleDownloadReceipt}
-      className="flex flex-col items-center justify-center bg-[#F7F5FA] border border-[#E6E1EE] rounded-2xl py-4 active:scale-[0.98] transition"
+      className="flex flex-col items-center justify-center bg-[#FAFAFA] border border-[#ECECEC] rounded-[22px] py-4 active:scale-[0.98] transition"
     >
 
-      <div className="w-10 h-10 rounded-xl bg-[#2E1A47]/10 flex items-center justify-center mb-2">
+      <div className="w-11 h-11 rounded-2xl bg-[#111111]/5 flex items-center justify-center mb-3">
 
-        <Download className="h-5 w-5 text-[#2E1A47]" />
+        <Download className="h-5 w-5 text-[#111111]" />
 
       </div>
 
-      <span className="text-[11px] font-medium text-[#1F1B24]">
+      <span className="text-[11px] font-medium text-[#111111] tracking-[0.08em] uppercase">
 
         Download
 
@@ -2951,22 +2954,40 @@ Powered by RDEP
 
   </div>
 
+
+  {/* Footer Note */}
+  <div className="mt-4 bg-[#FAFAFA] border border-[#ECECEC] rounded-[22px] p-4">
+
+    <div className="text-[11px] uppercase tracking-[0.18em] text-[#777777] mb-2">
+
+      Digital Ownership
+
+    </div>
+
+    <div className="text-[13px] text-[#555555] leading-relaxed">
+
+      This digital receipt remains securely linked to your Swarovski purchase history and can be accessed anytime for future care, service, or warranty-related support.
+
+    </div>
+
+  </div>
+
 </div>
 
 
 
-{/* Need Help Section */}
-<div className="bg-white rounded-2xl border border-[#E6E1EE] shadow-md mx-3 mt-4 p-4">
+{/* Customer Support Section */}
+<div className="bg-white rounded-[28px] border border-[#E8E8E8] shadow-sm mx-3 mt-4 p-4">
 
   {/* Header */}
-  <div className="flex items-center justify-between mb-4">
+  <div className="flex items-center justify-between mb-5">
 
     <div className="flex items-center">
 
       {/* Icon */}
-      <div className="bg-[#2E1A47] p-2.5 rounded-xl mr-3 shadow-sm">
+      <div className="bg-[#111111] p-2.5 rounded-2xl mr-3">
 
-        <Headphones className="h-4 w-4 text-[#C8A96B]" />
+        <Headphones className="h-4 w-4 text-white" />
 
       </div>
 
@@ -2974,15 +2995,15 @@ Powered by RDEP
       {/* Title */}
       <div>
 
-        <h3 className="text-sm font-semibold text-[#1F1B24]">
+        <h3 className="text-[18px] font-light text-[#111111] tracking-[0.01em]">
 
           Customer Support
 
         </h3>
 
-        <div className="text-[11px] text-[#6B6475] mt-0.5">
+        <div className="text-[13px] text-[#666666] mt-1">
 
-          Connect with Titan support anytime
+          Connect with Swarovski support and boutique assistance
 
         </div>
 
@@ -2992,9 +3013,9 @@ Powered by RDEP
 
 
     {/* Badge */}
-    <span className="text-[10px] font-semibold text-[#2E1A47] bg-[#F7F5FA] border border-[#DDD5EA] px-2 py-1 rounded-full">
+    <span className="text-[10px] font-medium text-[#555555] bg-[#FAFAFA] border border-[#E4E4E4] px-3 py-1 rounded-full tracking-[0.16em] uppercase">
 
-      24×7 HELP
+      Support
 
     </span>
 
@@ -3007,16 +3028,16 @@ Powered by RDEP
     {/* Chat */}
     <button
       onClick={handleWhatsApp}
-      className="flex flex-col items-center justify-center bg-[#F7F5FA] border border-[#E6E1EE] rounded-2xl py-4 active:scale-[0.98] transition"
+      className="flex flex-col items-center justify-center bg-[#FAFAFA] border border-[#ECECEC] rounded-[22px] py-4 active:scale-[0.98] transition"
     >
 
-      <div className="w-10 h-10 rounded-xl bg-[#2E1A47]/10 flex items-center justify-center mb-2">
+      <div className="w-11 h-11 rounded-2xl bg-[#111111]/5 flex items-center justify-center mb-3">
 
-        <MessageSquare className="h-5 w-5 text-[#2E1A47]" />
+        <MessageSquare className="h-5 w-5 text-[#111111]" />
 
       </div>
 
-      <span className="text-[11px] font-medium text-[#1F1B24]">
+      <span className="text-[11px] font-medium text-[#111111] tracking-[0.08em] uppercase">
 
         Chat
 
@@ -3028,16 +3049,16 @@ Powered by RDEP
     {/* Call */}
     <button
       onClick={handleCall}
-      className="flex flex-col items-center justify-center bg-[#F7F5FA] border border-[#E6E1EE] rounded-2xl py-4 active:scale-[0.98] transition"
+      className="flex flex-col items-center justify-center bg-[#FAFAFA] border border-[#ECECEC] rounded-[22px] py-4 active:scale-[0.98] transition"
     >
 
-      <div className="w-10 h-10 rounded-xl bg-[#2E1A47]/10 flex items-center justify-center mb-2">
+      <div className="w-11 h-11 rounded-2xl bg-[#111111]/5 flex items-center justify-center mb-3">
 
-        <Phone className="h-5 w-5 text-[#2E1A47]" />
+        <Phone className="h-5 w-5 text-[#111111]" />
 
       </div>
 
-      <span className="text-[11px] font-medium text-[#1F1B24]">
+      <span className="text-[11px] font-medium text-[#111111] tracking-[0.08em] uppercase">
 
         Call
 
@@ -3049,22 +3070,40 @@ Powered by RDEP
     {/* Email */}
     <button
       onClick={handleEmail}
-      className="flex flex-col items-center justify-center bg-[#F7F5FA] border border-[#E6E1EE] rounded-2xl py-4 active:scale-[0.98] transition"
+      className="flex flex-col items-center justify-center bg-[#FAFAFA] border border-[#ECECEC] rounded-[22px] py-4 active:scale-[0.98] transition"
     >
 
-      <div className="w-10 h-10 rounded-xl bg-[#2E1A47]/10 flex items-center justify-center mb-2">
+      <div className="w-11 h-11 rounded-2xl bg-[#111111]/5 flex items-center justify-center mb-3">
 
-        <Mail className="h-5 w-5 text-[#2E1A47]" />
+        <Mail className="h-5 w-5 text-[#111111]" />
 
       </div>
 
-      <span className="text-[11px] font-medium text-[#1F1B24]">
+      <span className="text-[11px] font-medium text-[#111111] tracking-[0.08em] uppercase">
 
         Email
 
       </span>
 
     </button>
+
+  </div>
+
+
+  {/* Care & Service Note */}
+  <div className="mt-4 bg-[#FAFAFA] border border-[#ECECEC] rounded-[22px] p-4">
+
+    <div className="text-[11px] uppercase tracking-[0.18em] text-[#777777] mb-2">
+
+      Care & Assistance
+
+    </div>
+
+    <div className="text-[13px] text-[#555555] leading-relaxed">
+
+      Need help with care guidance, warranty assistance, or service support for your Swarovski purchase? Our boutique and customer care teams remain available to assist you.
+
+    </div>
 
   </div>
 
