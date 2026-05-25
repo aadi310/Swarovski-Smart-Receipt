@@ -1294,7 +1294,7 @@ Powered by RDEP
 
 </div>
           
-         {/* Purchase Details */}
+        {/* Purchase Details */}
 <div className="bg-white rounded-[28px] shadow-sm border border-[#E8E8E8] mt-4 mx-3 p-4">
 
   {/* Header */}
@@ -1382,10 +1382,9 @@ Powered by RDEP
 
           <div className="mt-4 pt-4 border-t border-[#E4E4E4]">
 
-            {/* Dynamic Specs */}
+            {/* Important Product Details */}
             <div className="grid grid-cols-2 gap-y-3 gap-x-4 text-[12px]">
 
-              {/* Common */}
               <div>
                 <span className="text-[#8A8A8A]">
                   Article No.
@@ -1395,6 +1394,19 @@ Powered by RDEP
                   {product.articleNo}
                 </div>
               </div>
+
+
+              {product.collection && (
+                <div>
+                  <span className="text-[#8A8A8A]">
+                    Collection
+                  </span>
+
+                  <div className="font-medium text-[#111111] mt-1">
+                    {product.collection}
+                  </div>
+                </div>
+              )}
 
 
               {product.finish && (
@@ -1410,27 +1422,14 @@ Powered by RDEP
               )}
 
 
-              {product.stoneCut && (
+              {(product.stoneCut || product.stoneCuts) && (
                 <div>
                   <span className="text-[#8A8A8A]">
-                    Stone Cut
+                    Crystal Cut
                   </span>
 
                   <div className="font-medium text-[#111111] mt-1">
-                    {product.stoneCut}
-                  </div>
-                </div>
-              )}
-
-
-              {product.stoneCuts && (
-                <div>
-                  <span className="text-[#8A8A8A]">
-                    Stone Cuts
-                  </span>
-
-                  <div className="font-medium text-[#111111] mt-1">
-                    {product.stoneCuts}
+                    {product.stoneCut || product.stoneCuts}
                   </div>
                 </div>
               )}
@@ -1449,58 +1448,6 @@ Powered by RDEP
               )}
 
 
-              {product.caseSize && (
-                <div>
-                  <span className="text-[#8A8A8A]">
-                    Case Size
-                  </span>
-
-                  <div className="font-medium text-[#111111] mt-1">
-                    {product.caseSize}
-                  </div>
-                </div>
-              )}
-
-
-              {product.mechanism && (
-                <div>
-                  <span className="text-[#8A8A8A]">
-                    Movement
-                  </span>
-
-                  <div className="font-medium text-[#111111] mt-1">
-                    {product.mechanism}
-                  </div>
-                </div>
-              )}
-
-
-              {product.waterResistance && (
-                <div>
-                  <span className="text-[#8A8A8A]">
-                    Water Resistance
-                  </span>
-
-                  <div className="font-medium text-[#111111] mt-1">
-                    {product.waterResistance}
-                  </div>
-                </div>
-              )}
-
-
-              {product.strap && (
-                <div>
-                  <span className="text-[#8A8A8A]">
-                    Strap
-                  </span>
-
-                  <div className="font-medium text-[#111111] mt-1">
-                    {product.strap}
-                  </div>
-                </div>
-              )}
-
-
               {product.madeIn && (
                 <div>
                   <span className="text-[#8A8A8A]">
@@ -1513,27 +1460,35 @@ Powered by RDEP
                 </div>
               )}
 
+            </div>
 
-              {/* Warranty / Ownership */}
-              <div>
-                <span className="text-[#8A8A8A]">
-                  Purchase Status
-                </span>
 
-                <div className="font-medium text-[#111111] mt-1">
-                  {product.warrantyStatus || "Purchase Registered"}
-                </div>
+            {/* Warranty / Care Note */}
+            <div className="mt-4 rounded-[22px] bg-[#F6F6F6] border border-[#E8E8E8] p-4">
+
+              <div className="text-[11px] uppercase tracking-[0.18em] text-[#7A7A7A] mb-2">
+                Care & Coverage
               </div>
 
+              <div className="text-[13px] leading-relaxed text-[#444444]">
 
-              <div>
-                <span className="text-[#8A8A8A]">
-                  Proof of Purchase
-                </span>
+                {product.type === "Watch" ? (
 
-                <div className="font-medium text-[#111111] mt-1">
-                  Available Digitally
-                </div>
+                  <>
+                    Your Swarovski watch is covered under Swarovski's statutory warranty
+                    for manufacturing and material defects. Please retain this digital
+                    receipt as proof of purchase for future service or warranty claims.
+                  </>
+
+                ) : (
+
+                  <>
+                    Please retain this digital receipt as proof of purchase and
+                    authenticity for future care, service, or warranty-related support.
+                  </>
+
+                )}
+
               </div>
 
             </div>
@@ -1754,6 +1709,7 @@ Powered by RDEP
   </div>
 
 </div>
+          
           {/* Feedback Section */}
 <div className="bg-white rounded-2xl border border-[#E6E1EE] shadow-md mx-3 mt-4 p-4">
 
