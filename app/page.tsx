@@ -45,25 +45,56 @@ interface Receipt {
   branch: string
   items: Array<{
     id: number
+    type: string
+    subType?: string
+    articleNo: string
     name: string
     description: string
+    collection: string
     price: number
     quantity: number
-    category?: string
+
+    // Pricing
     taxApplicable?: boolean
     baseAmount?: number
     tax?: number
-    itemCode?: string
-    gender?: string
-    strapMaterial?: string
-    strapColor?: string
-    warranty?: string
+    currency?: string
+
+    // Common Product Details
+    material?: string
+    finish?: string
+    color?: string
+    madeIn?: string
+
+    // Watch Specific
+    caseSize?: string
+    caseThickness?: string
+    mechanism?: string
+    waterResistance?: string
+    strap?: string
+    clasp?: string
+
+    // Jewellery Specific
+    stoneCut?: string
+    stoneCuts?: string
+    stoneColor?: string
+    setting?: string
+    closure?: string
+
+    // Experience Layer
+    registeredPurchase?: boolean
+    authenticityVerified?: boolean
+    careGuideAvailable?: boolean
+    warrantyStatus?: string
+
+    importer?: string
     skuId?: string
   }>
   subtotal: number
   tax: number
   total: number
 }
+
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -203,161 +234,303 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
 
  const receipts = {
   current: {
-    id: "TITINDDEL78452",
-    date: "05-03-2026",
-    time: "19:22:18",
-    associate: "Rohan Mehta",
-    branch: "Titan World - MG Road Bangalore",
+    id: "SWRINDDEL92841",
+    date: "18-05-2026",
+    time: "18:42:11",
+    associate: "Aarav Khanna",
+    branch: "Swarovski Boutique - DLF Emporio Delhi",
+
     items: [
       {
         id: 0,
-        name: "Titan Celestor 2.0 Smartwatch",
-        description: "Premium smartwatch with fitness tracking, AMOLED display & Bluetooth calling",
-        price: 10350.0,
+        type: "Watch",
+        articleNo: "5715521",
+        name: "Dextera Octagon Watch",
+        description:
+          "Swiss Made octagon watch with crystal pavé bezel and rose gold-tone finish",
+        collection: "Dextera",
+
+        price: 40000,
         quantity: 1,
-        category: "Smart Watches",
+
         taxApplicable: true,
-        baseAmount: 8771.19,
-        tax: 1578.81,
-        itemCode: "SW248",
-        gender: "Unisex",
-        strapMaterial: "Silicone & Nylon",
-        strapColor: "Blue",
-        warranty: "12 Months",
-        skuId: "90248AP02C",
+        baseAmount: 33898.31,
+        tax: 6101.69,
+        currency: "INR",
+
+        material:
+          "Crystals, Rose Gold-tone PVD, Stainless Steel",
+
+        finish: "Rose Gold-tone Finish",
+        color: "Silver / Rose Gold",
+        madeIn: "Switzerland",
+
+        caseSize: "32 × 23 mm",
+        caseThickness: "7 mm",
+        mechanism: "Quartz",
+        waterResistance: "50 metres",
+        strap: "Metal Bracelet",
+        clasp: "Butterfly clasp",
+
+        registeredPurchase: true,
+        authenticityVerified: true,
+        careGuideAvailable: true,
+        warrantyStatus: "Coverage Active",
+
+        importer:
+          "Swarovski India Private Limited, Gurugram – 122002",
+
+        skuId: "5715521",
       },
+
       {
         id: 1,
-        name: "Titan Minimals Quartz Analog Watch",
-        description: "Minimal black dial analog watch with premium metallic finish",
-        price: 3595.0,
+        type: "Jewellery",
+        subType: "Bracelet",
+
+        articleNo: "5648937",
+
+        name: "Matrix Tennis Bracelet",
+
+        description:
+          "Round-cut white crystals on rhodium plating with hidden fastening",
+
+        collection: "Matrix Tennis",
+
+        price: 19900,
         quantity: 1,
-        category: "Analog Watches",
+
         taxApplicable: true,
-        baseAmount: 3046.61,
-        tax: 548.39,
-        itemCode: "AQ106",
-        gender: "Men",
-        strapMaterial: "Metal",
-        strapColor: "Black",
-        warranty: "24 Months",
-        skuId: "NU1806NM01",
+        baseAmount: 16864.41,
+        tax: 3035.59,
+        currency: "INR",
+
+        material: "Crystals",
+        finish: "Rhodium Plated",
+        color: "White / Clear",
+
+        stoneCut: "Round cut",
+        stoneColor: "White / Clear",
+        setting: "Prong setting",
+        closure:
+          "Hidden fastening with security chain",
+
+        registeredPurchase: true,
+        authenticityVerified: true,
+        careGuideAvailable: true,
+        warrantyStatus: "Purchase Protected",
+
+        importer:
+          "Swarovski India Private Limited, Gurugram – 122002",
+
+        skuId: "5648937",
       },
+
       {
         id: 2,
-        name: "Titan Men's Timeless Charm",
-        description: "Classic leather strap watch designed for everyday elegance",
-        price: 1795.0,
+        type: "Jewellery",
+        subType: "Necklace",
+
+        articleNo: "5656397",
+
+        name: "Gema Necklace",
+
+        description:
+          "Multicolored crystal necklace crafted with mixed cuts and rhodium plating",
+
+        collection: "Gema",
+
+        price: 19900,
         quantity: 1,
-        category: "Leather Watches",
+
         taxApplicable: true,
-        baseAmount: 1521.19,
-        tax: 273.81,
-        itemCode: "LC229",
-        gender: "Men",
-        strapMaterial: "Leather",
-        strapColor: "Brown",
-        warranty: "24 Months",
-        skuId: "NL1729SL02",
+        baseAmount: 16864.41,
+        tax: 3035.59,
+        currency: "INR",
+
+        material: "Crystals",
+        finish: "Rhodium Plated",
+        color: "Multicolored",
+
+        stoneCuts: "Mixed cuts",
+        stoneColor: "Multicolored",
+
+        registeredPurchase: true,
+        authenticityVerified: true,
+        careGuideAvailable: true,
+        warrantyStatus: "Proof of Purchase Available",
+
+        importer:
+          "Swarovski India Private Limited, Gurugram – 122002",
+
+        skuId: "5656397",
       },
     ],
-    subtotal: 13339.0,
-    tax: 2401.01,
-    total: 15740.0,
+
+    subtotal: 67627.13,
+    tax: 12172.87,
+    total: 79800,
   },
 
   hist1: {
-    id: "TITINDMUM49381",
-    date: "20-01-2026",
-    time: "14:22:18",
-    associate: "Ananya Kapoor",
-    branch: "Titan World - Phoenix Mall",
+    id: "SWRINDBLR48371",
+    date: "09-02-2026",
+    time: "14:12:08",
+    associate: "Neha Sethi",
+    branch: "Swarovski Boutique - UB City Bangalore",
+
     items: [
       {
         id: 0,
-        name: "Titan Women's Lagan Chic",
-        description: "Elegant white leather strap watch with contemporary styling",
-        price: 1895.0,
+        type: "Watch",
+
+        articleNo: "5742475",
+
+        name: "Cosmopolitan Watch",
+
+        description:
+          "Swiss Made stainless steel watch with crystal pavé bezel",
+
+        collection: "Cosmopolitan",
+
+        price: 24000,
         quantity: 1,
-        category: "Women's Watches",
+
         taxApplicable: true,
-        baseAmount: 1605.93,
-        tax: 289.07,
-        itemCode: "WL656",
-        gender: "Women",
-        strapMaterial: "Leather",
-        strapColor: "White",
-        warranty: "24 Months",
-        skuId: "2656WL01",
+        baseAmount: 20338.98,
+        tax: 3661.02,
+        currency: "INR",
+
+        material: "Crystals, Stainless Steel",
+        finish: "Silver Tone",
+        color: "Silver",
+
+        madeIn: "Switzerland",
+
+        caseSize: "40 × 32 mm",
+        caseThickness: "7 mm",
+        mechanism: "Quartz",
+        strap: "Metal Bracelet",
+        clasp: "Butterfly clasp",
+
+        registeredPurchase: true,
+        authenticityVerified: true,
+        careGuideAvailable: true,
+        warrantyStatus: "Coverage Active",
+
+        importer:
+          "Swarovski India Private Limited, Gurugram – 122002",
+
+        skuId: "5742475",
       },
+
       {
         id: 1,
-        name: "Titan AiRA Women Smartwatch",
-        description: "Smartwatch with health tracking, notifications & rose gold finish",
-        price: 6750.0,
+        type: "Jewellery",
+        subType: "Necklace",
+
+        articleNo: "5661191",
+
+        name: "Matrix Tennis Necklace",
+
+        description:
+          "Round-cut crystal necklace with continuous row design",
+
+        collection: "Matrix Tennis",
+
+        price: 24000,
         quantity: 1,
-        category: "Smart Watches",
+
         taxApplicable: true,
-        baseAmount: 5720.34,
-        tax: 1029.66,
-        itemCode: "SW416",
-        gender: "Women",
-        strapMaterial: "Silicone",
-        strapColor: "Rose Gold",
-        warranty: "12 Months",
-        skuId: "95416KM01K",
+        baseAmount: 20338.98,
+        tax: 3661.02,
+        currency: "INR",
+
+        material: "Crystals",
+        finish: "Rhodium Plated",
+        color: "White / Clear",
+
+        stoneCut: "Round cut",
+        stoneColor: "White / Clear",
+        setting: "Continuous row, prong setting",
+
+        registeredPurchase: true,
+        authenticityVerified: true,
+        careGuideAvailable: true,
+        warrantyStatus: "Purchase Registered",
+
+        importer:
+          "Swarovski India Private Limited, Gurugram – 122002",
+
+        skuId: "5661191",
       },
     ],
-    subtotal: 7326.27,
-    tax: 1318.73,
-    total: 8645.0,
+
+    subtotal: 40677.96,
+    tax: 7322.04,
+    total: 48000,
   },
 
   hist2: {
-    id: "TITINDBLR28476",
-    date: "15-12-2025",
-    time: "12:45:33",
-    associate: "Arjun Nair",
-    branch: "Titan World - Orion Mall",
+    id: "SWRINDMUM11852",
+    date: "12-12-2025",
+    time: "17:58:32",
+    associate: "Ritika Malhotra",
+    branch: "Swarovski Boutique - Palladium Mumbai",
+
     items: [
       {
         id: 0,
-        name: "Sonata Poze Quartz Analog",
-        description: "Rose gold stainless steel watch with minimalist dial",
-        price: 1495.0,
+        type: "Watch",
+
+        articleNo: "5672931",
+
+        name: "Octea Chrono Watch",
+
+        description:
+          "Swiss Made green chronograph watch with rose gold-tone finish",
+
+        collection: "Octea",
+
+        price: 44000,
         quantity: 1,
-        category: "Sonata Collection",
+
         taxApplicable: true,
-        baseAmount: 1266.95,
-        tax: 228.05,
-        itemCode: "SZ087",
-        gender: "Women",
-        strapMaterial: "Stainless Steel",
-        strapColor: "Rose Gold",
-        warranty: "12 Months",
-        skuId: "SP80087WM01",
-      },
-      {
-        id: 1,
-        name: "Fastrack UFO Quartz Watch",
-        description: "Bold stainless steel analog watch with futuristic styling",
-        price: 2495.0,
-        quantity: 1,
-        category: "Fastrack Watches",
-        taxApplicable: true,
-        baseAmount: 2114.41,
-        tax: 380.59,
-        itemCode: "FT327",
-        gender: "Men",
-        strapMaterial: "Stainless Steel",
-        strapColor: "Silver",
-        warranty: "24 Months",
-        skuId: "3327SM01",
+        baseAmount: 37288.14,
+        tax: 6711.86,
+        currency: "INR",
+
+        material: "Crystals, Rose Gold-tone PVD",
+
+        finish: "Rose Gold-tone Finish",
+        color: "Green",
+
+        madeIn: "Switzerland",
+
+        caseSize: "42 × 37 mm",
+        caseThickness: "11 mm",
+        mechanism: "Quartz Chronograph",
+        waterResistance: "50 metres",
+        strap:
+          "Italian calfskin leather with crocodile pattern",
+
+        clasp: "Buckle",
+
+        registeredPurchase: true,
+        authenticityVerified: true,
+        careGuideAvailable: true,
+        warrantyStatus: "Coverage Active",
+
+        importer:
+          "Swarovski India Private Limited, Gurugram – 122002",
+
+        skuId: "5672931",
       },
     ],
-    subtotal: 3381.36,
-    tax: 608.64,
-    total: 3990.0,
+
+    subtotal: 37288.14,
+    tax: 6711.86,
+    total: 44000,
   },
 };
 
@@ -368,24 +541,24 @@ const totalSlides = 2
 const transactionHistory = [
   {
     id: "current",
-    date: "05-03-2026",
-    branch: "Titan World",
+    date: "18-05-2026",
+    branch: "Swarovski Boutique - DLF Emporio Delhi",
     amount:
       currentReceiptId === "current"
         ? receipts.current.total
-        : 15740.0,
+        : 79800.0,
   },
   {
     id: "hist1",
-    date: "20-01-2026",
-    branch: "Titan World",
-    amount: 8645.0,
+    date: "09-02-2026",
+    branch: "Swarovski Boutique - UB City Bangalore",
+    amount: 48000.0,
   },
   {
     id: "hist2",
-    date: "15-12-2025",
-    branch: "Titan World",
-    amount: 3990.0,
+    date: "12-12-2025",
+    branch: "Swarovski Boutique - Palladium Mumbai",
+    amount: 44000.0,
   },
 ]
   
