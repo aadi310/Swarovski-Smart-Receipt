@@ -1711,14 +1711,14 @@ Powered by RDEP
 </div>
           
           {/* Feedback Section */}
-<div className="bg-white rounded-2xl border border-[#E6E1EE] shadow-md mx-3 mt-4 p-4">
+<div className="bg-white rounded-[28px] border border-[#E8E8E8] shadow-sm mx-3 mt-4 p-4">
 
   {feedbackSubmitted ? (
 
-    <div className="text-center py-6 bg-[#F7F5FA] rounded-2xl border border-[#E6E1EE]">
+    <div className="text-center py-7 bg-[#FAFAFA] rounded-[24px] border border-[#ECECEC]">
 
       {/* Success Icon */}
-      <div className="w-14 h-14 bg-[#2E1A47] rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+      <div className="w-14 h-14 bg-[#111111] rounded-full flex items-center justify-center mx-auto mb-5">
 
         <svg
           className="w-7 h-7 text-white"
@@ -1740,15 +1740,15 @@ Powered by RDEP
 
 
       {/* Text */}
-      <div className="text-base font-semibold text-[#1F1B24] mb-1">
+      <div className="text-[18px] font-light text-[#111111] mb-2 tracking-[0.01em]">
 
-        Thank you for your feedback
+        Thank You For Your Feedback
 
       </div>
 
-      <div className="text-sm text-[#6B6475] leading-relaxed px-5">
+      <div className="text-[14px] text-[#666666] leading-relaxed px-6">
 
-        Your feedback helps Titan improve every shopping and ownership experience.
+        Your feedback helps Swarovski refine every in-store and ownership experience.
 
       </div>
 
@@ -1756,7 +1756,7 @@ Powered by RDEP
 
   ) : (
 
-    <div className="space-y-5">
+    <div className="space-y-6">
 
       {/* Header */}
       <div className="flex items-center justify-between">
@@ -1764,9 +1764,9 @@ Powered by RDEP
         <div className="flex items-center">
 
           {/* Icon */}
-          <div className="bg-[#2E1A47] p-2.5 rounded-xl mr-3 shadow-sm">
+          <div className="bg-[#111111] p-2.5 rounded-2xl mr-3">
 
-            <Star className="w-4 h-4 text-[#C8A96B] fill-[#C8A96B]" />
+            <Star className="w-4 h-4 text-white fill-white" />
 
           </div>
 
@@ -1774,9 +1774,9 @@ Powered by RDEP
           {/* Title */}
           <div>
 
-            <h3 className="text-base font-semibold text-[#1F1B24]">
+            <h3 className="text-[18px] font-light text-[#111111] tracking-[0.01em]">
 
-              Rate Your Experience
+              Share Your Experience
 
             </h3>
 
@@ -1786,9 +1786,9 @@ Powered by RDEP
 
 
         {/* Badge */}
-        <span className="text-[10px] font-semibold text-[#2E1A47] bg-[#F7F5FA] border border-[#DDD5EA] px-2.5 py-1 rounded-full">
+        <span className="text-[10px] font-medium text-[#555555] bg-[#FAFAFA] border border-[#E4E4E4] px-3 py-1 rounded-full tracking-[0.18em] uppercase">
 
-          FEEDBACK
+          Feedback
 
         </span>
 
@@ -1812,8 +1812,8 @@ Powered by RDEP
             <Star
               className={`h-9 w-9 transition-colors ${
                 star <= rating
-                  ? "fill-[#C8A96B] text-[#C8A96B]"
-                  : "text-[#DDD5EA]"
+                  ? "fill-[#111111] text-[#111111]"
+                  : "text-[#DADADA]"
               }`}
             />
 
@@ -1829,7 +1829,7 @@ Powered by RDEP
 
         <div className="space-y-3">
 
-          <div className="text-[11px] font-semibold text-[#6B6475] uppercase tracking-wide">
+          <div className="text-[11px] font-medium text-[#777777] uppercase tracking-[0.18em]">
 
             Tell us more about your experience
 
@@ -1840,20 +1840,20 @@ Powered by RDEP
 
             {(rating >= 4
               ? [
-                  "Premium Design",
-                  "Excellent Service",
-                  "Product Quality",
-                  "Value for Money",
-                  "Store Experience",
-                  "Fast Billing",
+                  "Boutique Experience",
+                  "Product Design",
+                  "Craftsmanship",
+                  "Packaging",
+                  "Store Assistance",
+                  "Purchase Experience",
                 ]
               : [
                   "Product Availability",
-                  "Service Experience",
-                  "Waiting Time",
-                  "Pricing",
                   "Store Assistance",
+                  "Waiting Time",
                   "Checkout Experience",
+                  "Pricing",
+                  "Service Experience",
                 ]
             ).map((item) => (
 
@@ -1868,8 +1868,8 @@ Powered by RDEP
                 }
                 className={`text-[11px] px-3 py-1.5 rounded-full border transition-all ${
                   selectedTags.includes(item)
-                    ? "bg-[#2E1A47] text-white border-[#2E1A47]"
-                    : "border-[#DDD5EA] bg-[#F7F5FA] text-[#6B6475]"
+                    ? "bg-[#111111] text-white border-[#111111]"
+                    : "border-[#E4E4E4] bg-[#FAFAFA] text-[#666666]"
                 }`}
               >
 
@@ -1887,9 +1887,9 @@ Powered by RDEP
 
 
       {/* Comment */}
-      <div className="space-y-1.5">
+      <div className="space-y-2">
 
-        <label className="text-[11px] font-semibold text-[#6B6475] uppercase tracking-wide">
+        <label className="text-[11px] font-medium text-[#777777] uppercase tracking-[0.18em]">
 
           Additional Feedback
 
@@ -1897,8 +1897,8 @@ Powered by RDEP
 
         <textarea
           rows={3}
-          placeholder="Share your experience with Titan"
-          className="w-full p-3 text-sm border border-[#DDD5EA] rounded-2xl bg-white focus:ring-1 focus:ring-[#2E1A47] focus:border-[#2E1A47] outline-none resize-none transition"
+          placeholder="Share your Swarovski experience"
+          className="w-full p-4 text-[14px] border border-[#E4E4E4] rounded-[22px] bg-white focus:ring-1 focus:ring-[#111111] focus:border-[#111111] outline-none resize-none transition"
           value={feedbackText}
           onChange={(e) => setFeedbackText(e.target.value)}
         />
@@ -1908,10 +1908,10 @@ Powered by RDEP
 
       {/* Submit */}
       <button
-        className={`w-full h-11 text-sm font-semibold rounded-2xl transition active:scale-[0.98] ${
+        className={`w-full h-12 text-[14px] font-medium rounded-[22px] transition active:scale-[0.98] ${
           rating
-            ? "bg-[#2E1A47] text-white hover:opacity-95"
-            : "bg-[#ECE8F3] text-[#9B94A8] cursor-not-allowed"
+            ? "bg-[#111111] text-white hover:opacity-95"
+            : "bg-[#EFEFEF] text-[#A1A1A1] cursor-not-allowed"
         }`}
         onClick={handleFeedbackSubmit}
         disabled={!rating}
@@ -1923,9 +1923,9 @@ Powered by RDEP
 
 
       {/* Footer */}
-      <p className="text-[10px] text-center text-[#6B6475] leading-relaxed px-4">
+      <p className="text-[11px] text-center text-[#777777] leading-relaxed px-5">
 
-        Your feedback helps us enhance every Titan experience across stores and digital channels.
+        Your feedback helps Swarovski enhance every boutique and post-purchase experience across stores and digital channels.
 
       </p>
 
