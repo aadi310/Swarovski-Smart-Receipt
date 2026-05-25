@@ -1936,7 +1936,7 @@ Powered by RDEP
 </div>
           
           {/* Promo Banner Carousel */}
-<div className="bg-white rounded-2xl border border-[#E6E1EE] shadow-md overflow-hidden mx-3 mt-4 relative">
+<div className="bg-white rounded-[28px] border border-[#E8E8E8] shadow-sm overflow-hidden mx-3 mt-4 relative">
 
   <Carousel
     className="w-full"
@@ -1948,23 +1948,49 @@ Powered by RDEP
 
     <CarouselContent>
 
-      {/* Banner 1 */}
+      {/* Banner 1 - Ariana Grande */}
       <CarouselItem>
 
         <a
-          href="https://www.titan.co.in/shop/titan-sale?lang=en_IN"
+          href="https://www.swarovski.com/en-IN/s-ariana-grande-swarovski-capsule-collection/"
           target="_blank"
           rel="noopener noreferrer"
           className="block w-full"
         >
 
-          <div className="relative w-full aspect-[3/1] bg-[#1E102E] overflow-hidden">
+          <div className="relative w-full aspect-[2/1] overflow-hidden bg-black">
 
+            {/* Image */}
             <img
-              src="/images/design-mode/titan-banner-1.webp"
-              alt="Titan Sale"
+              src="/images/design-mode/ariana-banner-1.png"
+              alt="Ariana Grande x Swarovski Capsule Collection"
               className="w-full h-full object-cover"
             />
+
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-transparent" />
+
+            {/* Content */}
+            <div className="absolute inset-0 flex flex-col justify-center px-6 z-10">
+
+              <div className="max-w-[65%]">
+
+                <div className="text-white text-[24px] leading-tight font-light tracking-[0.01em]">
+
+                  Ariana Grande x Swarovski Capsule Collection
+
+                </div>
+
+
+                <button className="mt-4 h-10 px-5 rounded-full bg-white text-[#111111] text-[12px] font-medium tracking-[0.08em] uppercase">
+
+                  Discover More
+
+                </button>
+
+              </div>
+
+            </div>
 
           </div>
 
@@ -1973,48 +1999,49 @@ Powered by RDEP
       </CarouselItem>
 
 
-      {/* Banner 2 */}
+      {/* Banner 2 - Millenia */}
       <CarouselItem>
 
         <a
-          href="https://www.titan.co.in/divers-clp.html?lang=en_IN"
+          href="https://www.swarovski.com/en-IN/c-swa-root/Categories/f/collection/collection-millenia/"
           target="_blank"
           rel="noopener noreferrer"
           className="block w-full"
         >
 
-          <div className="relative w-full aspect-[3/1] bg-[#1E102E] overflow-hidden">
+          <div className="relative w-full aspect-[2/1] overflow-hidden bg-black">
 
+            {/* Image */}
             <img
-              src="/images/design-mode/titan-banner-2.webp"
-              alt="Titan Divers Collection"
+              src="/images/design-mode/millenia-collection.png"
+              alt="Millenia Collection"
               className="w-full h-full object-cover"
             />
 
-          </div>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/25 to-transparent" />
 
-        </a>
+            {/* Content */}
+            <div className="absolute inset-0 flex flex-col justify-center px-6 z-10">
 
-      </CarouselItem>
+              <div className="max-w-[60%]">
+
+                <div className="text-white text-[26px] leading-tight font-light tracking-[0.01em]">
+
+                  Millenia Collection
+
+                </div>
 
 
-      {/* Banner 3 */}
-      <CarouselItem>
+                <button className="mt-4 h-10 px-5 rounded-full bg-white text-[#111111] text-[12px] font-medium tracking-[0.08em] uppercase">
 
-        <a
-          href="https://www.titan.co.in/shop/raga-watches-on-sale?lang=en_IN"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block w-full"
-        >
+                  Shop Now
 
-          <div className="relative w-full aspect-[3/1] bg-[#1E102E] overflow-hidden">
+                </button>
 
-            <img
-              src="/images/design-mode/titan-banner-3.webp"
-              alt="Titan Raga Sale"
-              className="w-full h-full object-cover"
-            />
+              </div>
+
+            </div>
 
           </div>
 
@@ -2026,16 +2053,16 @@ Powered by RDEP
 
 
     {/* Pagination Dots */}
-    <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 z-10">
+    <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-20">
 
-      {[0, 1, 2].map((index) => (
+      {[0, 1].map((index) => (
 
         <button
           key={index}
           onClick={() => promoApi?.scrollTo(index)}
           className={`h-1.5 rounded-full transition-all duration-300 ${
             currentSlide === index
-              ? "w-5 bg-white"
+              ? "w-6 bg-white"
               : "w-1.5 bg-white/50"
           }`}
         />
@@ -2047,7 +2074,6 @@ Powered by RDEP
   </Carousel>
 
 </div>
-
           {/* Rewards Loyalty Section */}
 <div className="bg-white rounded-2xl shadow-md border border-[#E6E1EE] mt-4 mx-3 overflow-hidden">
 
