@@ -238,7 +238,7 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
     date: "18-05-2026",
     time: "18:42:11",
     associate: "Aarav Khanna",
-    branch: "Swarovski Boutique - DLF Emporio Delhi",
+    branch: "Swarovski Boutique - Bangalore",
 
     items: [
       {
@@ -278,7 +278,7 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
         warrantyStatus: "Coverage Active",
 
         importer:
-          "Swarovski India Private Limited, Gurugram – 122002",
+          "Swarovski India Private Limited",
 
         skuId: "5715521",
       },
@@ -377,7 +377,7 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
     date: "09-02-2026",
     time: "14:12:08",
     associate: "Neha Sethi",
-    branch: "Swarovski Boutique - UB City Bangalore",
+    branch: "Swarovski Boutique - Bangalore",
 
     items: [
       {
@@ -460,7 +460,7 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
         warrantyStatus: "Purchase Registered",
 
         importer:
-          "Swarovski India Private Limited, Gurugram – 122002",
+          "Swarovski India Private Limited",
 
         skuId: "5661191",
       },
@@ -476,7 +476,7 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
     date: "12-12-2025",
     time: "17:58:32",
     associate: "Ritika Malhotra",
-    branch: "Swarovski Boutique - Palladium Mumbai",
+    branch: "Swarovski Boutique - Bangalore",
 
     items: [
       {
@@ -522,7 +522,7 @@ const [expandedItemFeedback, setExpandedItemFeedback] = useState([])
         warrantyStatus: "Coverage Active",
 
         importer:
-          "Swarovski India Private Limited, Gurugram – 122002",
+          "Swarovski India Private Limited",
 
         skuId: "5672931",
       },
@@ -542,7 +542,7 @@ const transactionHistory = [
   {
     id: "current",
     date: "18-05-2026",
-    branch: "Swarovski Boutique - DLF Emporio Delhi",
+    branch: "Swarovski Boutique - Bangalore",
     amount:
       currentReceiptId === "current"
         ? receipts.current.total
@@ -551,13 +551,13 @@ const transactionHistory = [
   {
     id: "hist1",
     date: "09-02-2026",
-    branch: "Swarovski Boutique - UB City Bangalore",
+    branch: "Swarovski Boutique - Bangalore",
     amount: 48000.0,
   },
   {
     id: "hist2",
     date: "12-12-2025",
-    branch: "Swarovski Boutique - Palladium Mumbai",
+    branch: "Swarovski Boutique - Bangalore",
     amount: 44000.0,
   },
 ]
@@ -643,7 +643,7 @@ const transactionHistory = [
   }
 
   const handleEmailReceipt = () => {
-    window.open(`mailto:?subject=Receipt from Titan&body=Receipt ID: ${currentReceipt.id}`)
+    window.open(`mailto:?subject=Receipt from Swarovski&body=Receipt ID: ${currentReceipt.id}`)
   }
 
   const handleDownloadReceipt = () => {
@@ -652,9 +652,9 @@ const transactionHistory = [
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Titan Digital Receipt</title>
+<title>Swarovski Digital Receipt</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -667,7 +667,7 @@ box-sizing:border-box;
 body{
 font-family:'Poppins',sans-serif;
 font-size:14px;
-color:#1F1B24;
+color:#111111;
 background:#fff;
 width:800px;
 margin:0 auto;
@@ -680,23 +680,23 @@ padding:24px;
 display:flex;
 justify-content:space-between;
 align-items:flex-start;
-margin-bottom:28px;
-padding-bottom:18px;
-border-bottom:3px solid #2E1A47;
+margin-bottom:30px;
+padding-bottom:20px;
+border-bottom:2px solid #111111;
 }
 
 .company-info h1{
-font-size:32px;
-color:#2E1A47;
-font-weight:700;
-margin-bottom:6px;
-letter-spacing:0.5px;
+font-size:34px;
+color:#111111;
+font-weight:300;
+letter-spacing:2px;
+margin-bottom:8px;
 }
 
 .company-info p{
 font-size:12px;
-color:#555;
-line-height:1.5;
+color:#666;
+line-height:1.6;
 }
 
 .bill-info{
@@ -705,35 +705,35 @@ font-size:12px;
 }
 
 .bill-info div{
-margin-bottom:5px;
+margin-bottom:6px;
 }
 
 .bill-id{
-font-weight:700;
-color:#2E1A47;
+font-weight:600;
+color:#111111;
 }
 
-/* Customer Section */
+/* Customer */
 
 .customer-section{
-background:#F7F5FA;
-padding:16px;
-border-left:4px solid #C8A96B;
-border-radius:0 10px 10px 0;
-margin-bottom:24px;
+background:#FAFAFA;
+border:1px solid #ECECEC;
+padding:18px;
+border-radius:18px;
+margin-bottom:26px;
 }
 
 .customer-section h3{
-font-size:16px;
-color:#2E1A47;
-font-weight:600;
-margin-bottom:4px;
+font-size:18px;
+font-weight:400;
+color:#111111;
+margin-bottom:6px;
 }
 
 .customer-section p{
 font-size:12px;
 color:#666;
-line-height:1.5;
+line-height:1.7;
 }
 
 /* Table */
@@ -741,44 +741,39 @@ line-height:1.5;
 .items-table{
 width:100%;
 border-collapse:collapse;
-margin-bottom:26px;
+margin-bottom:28px;
 }
 
 .items-table th{
-background:#2E1A47;
-color:white;
-padding:12px 10px;
+background:#111111;
+color:#fff;
+padding:14px 12px;
 text-align:left;
 font-size:11px;
 text-transform:uppercase;
-letter-spacing:0.5px;
+font-weight:500;
+letter-spacing:1px;
 }
 
 .items-table td{
-padding:14px 10px;
-border-bottom:1px solid #EEE8F5;
+padding:16px 12px;
+border-bottom:1px solid #ECECEC;
 font-size:12px;
 vertical-align:top;
 }
 
 .item-name{
-font-weight:600;
-margin-bottom:4px;
-color:#1F1B24;
-}
-
-.item-desc{
-font-size:11px;
-color:#666;
+font-size:14px;
+font-weight:500;
+color:#111111;
+margin-bottom:6px;
 line-height:1.5;
 }
 
 .item-specs{
-font-size:10px;
-color:#2E1A47;
-margin-top:6px;
-font-weight:600;
-line-height:1.5;
+font-size:11px;
+color:#555;
+line-height:1.7;
 }
 
 /* Totals */
@@ -786,51 +781,53 @@ line-height:1.5;
 .totals-section{
 display:flex;
 justify-content:space-between;
-margin-bottom:22px;
+margin-bottom:24px;
 }
 
 .items-count{
-font-weight:600;
-color:#2E1A47;
+font-size:13px;
+font-weight:500;
+color:#111111;
 }
 
 .totals-table{
 text-align:right;
-min-width:220px;
+min-width:240px;
 }
 
 .totals-table div{
-margin-bottom:8px;
+margin-bottom:10px;
 font-size:13px;
+color:#555;
 }
 
 .net-total{
-font-size:20px;
-font-weight:700;
-color:#2E1A47;
-border-top:2px solid #2E1A47;
-padding-top:8px;
-margin-top:8px;
+font-size:22px !important;
+font-weight:600;
+color:#111111 !important;
+border-top:2px solid #111111;
+padding-top:10px;
+margin-top:10px;
 }
 
-/* Payment Box */
+/* Payment */
 
 .payment-box{
-background:#F7F5FA;
-border:1px solid #E6E1EE;
-border-radius:12px;
-padding:14px;
-margin-bottom:24px;
+background:#FAFAFA;
+border:1px solid #ECECEC;
+border-radius:18px;
+padding:18px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+margin-bottom:26px;
 }
 
 .payment-title{
 font-size:12px;
 font-weight:600;
-color:#2E1A47;
-margin-bottom:3px;
+color:#111111;
+margin-bottom:4px;
 }
 
 .payment-sub{
@@ -839,39 +836,73 @@ color:#666;
 }
 
 .payment-amount{
-font-size:16px;
-font-weight:700;
-color:#2E1A47;
+font-size:18px;
+font-weight:600;
+color:#111111;
+}
+
+/* Warranty */
+
+.warranty-box{
+background:#F8F8F8;
+border:1px solid #ECECEC;
+border-radius:18px;
+padding:18px;
+margin-bottom:26px;
+}
+
+.warranty-title{
+font-size:13px;
+font-weight:600;
+color:#111111;
+margin-bottom:8px;
+text-transform:uppercase;
+letter-spacing:1px;
+}
+
+.warranty-box p{
+font-size:12px;
+color:#666;
+line-height:1.8;
 }
 
 /* Footer */
 
 .footer{
+margin-top:32px;
+padding-top:22px;
+border-top:1px dashed #DADADA;
 text-align:center;
-margin-top:30px;
-padding-top:20px;
-border-top:1px dashed #D8D1E3;
+}
+
+.footer p{
 font-size:12px;
-color:#555;
+color:#666;
+line-height:1.8;
 }
 
 .footer strong{
-color:#2E1A47;
+color:#111111;
+font-weight:600;
 }
 
 .powered{
-margin-top:12px;
+margin-top:14px;
 font-size:10px;
+letter-spacing:1px;
+text-transform:uppercase;
 color:#999;
 font-weight:600;
 }
 
 @media print{
+
 body{
 -webkit-print-color-adjust:exact;
 width:100%;
 padding:0;
 }
+
 }
 
 </style>
@@ -879,18 +910,92 @@ padding:0;
 
 <body>
 
+${(() => {
+
+const currentReceipt = receipts[currentReceiptId]
+
+const itemsHtml = currentReceipt.items.map((item) => {
+
+const detailLines = []
+
+if(item.skuId){
+detailLines.push(`SKU: ${item.skuId}`)
+}
+
+if(item.material){
+detailLines.push(`Material: ${item.material}`)
+}
+
+if(item.finish){
+detailLines.push(`Finish: ${item.finish}`)
+}
+
+if(item.color){
+detailLines.push(`Color: ${item.color}`)
+}
+
+if(item.collection){
+detailLines.push(`Collection: ${item.collection}`)
+}
+
+if(item.warranty){
+detailLines.push(`Warranty: ${item.warranty}`)
+}
+
+return `
+
+<tr>
+
+<td>
+
+<div class="item-name">
+${item.name}
+</div>
+
+<div class="item-specs">
+${detailLines.join("<br>")}
+</div>
+
+</td>
+
+<td>
+${item.quantity}
+</td>
+
+<td>
+${item.category || "-"}
+</td>
+
+<td>
+₹${item.price.toLocaleString("en-IN")}
+</td>
+
+<td>
+<strong>
+₹${(item.price * item.quantity).toLocaleString("en-IN")}
+</strong>
+</td>
+
+</tr>
+
+`
+
+}).join("")
+
+return `
+
 <div class="receipt-header">
 
 <div class="company-info">
 
-<h1>TITAN</h1>
+<h1>SWAROVSKI</h1>
 
 <p>
-<strong>Titan World - MG Road Bangalore</strong><br>
-Shop No, 77 & 78, Mahatma Gandhi Rd,<br>
-beside Deccan Herald, Haridevpur,<br>
-Bengaluru, Karnataka 560001,<br>
-Phone: +91 11 4567 8901
+<strong>${currentReceipt.branch}</strong><br>
+Unit No. 107, First Floor, Garuda Mall,<br>
+Magrath Road, Ashok Nagar,<br>
+Bengaluru, Karnataka 560025<br>
+India
 </p>
 
 </div>
@@ -899,17 +1004,19 @@ Phone: +91 11 4567 8901
 
 <div>
 <strong>Receipt ID:</strong>
-<span class="bill-id">TITINDDEL78452</span>
+<span class="bill-id">
+${currentReceipt.id}
+</span>
 </div>
 
 <div>
 <strong>Date:</strong>
-05-03-2026 19:22
+${currentReceipt.date} ${currentReceipt.time}
 </div>
 
 <div>
-<strong>Store Associate:</strong>
-Rohan Mehta
+<strong>Boutique Associate:</strong>
+${currentReceipt.associate}
 </div>
 
 </div>
@@ -919,10 +1026,12 @@ Rohan Mehta
 
 <div class="customer-section">
 
-<h3>Customer: ${customerName}</h3>
+<h3>
+Customer: ${customerName}
+</h3>
 
 <p>
-Thank you for shopping with Titan. Your purchase is covered under Titan warranty and eligible for Titan Encircle rewards benefits.
+Thank you for shopping with Swarovski. This digital receipt serves as your proof of purchase and can be accessed anytime for future care, warranty, and service assistance across participating Swarovski boutiques and channels.
 </p>
 
 </div>
@@ -944,103 +1053,7 @@ Thank you for shopping with Titan. Your purchase is covered under Titan warranty
 
 <tbody>
 
-<tr>
-
-<td>
-
-<div class="item-name">
-Titan Celestor 2.0 Smartwatch
-</div>
-
-<div class="item-desc">
-Premium smartwatch with fitness tracking, AMOLED display & Bluetooth calling
-</div>
-
-<div class="item-specs">
-SKU: 90248AP02C<br>
-Strap: Silicone & Nylon • Blue<br>
-Warranty: 12 Months
-</div>
-
-</td>
-
-<td>1</td>
-
-<td>Smartwatch</td>
-
-<td>₹10,350</td>
-
-<td>
-<strong>₹10,350</strong>
-</td>
-
-</tr>
-
-
-<tr>
-
-<td>
-
-<div class="item-name">
-Titan Minimals Quartz Analog Watch
-</div>
-
-<div class="item-desc">
-Minimal black dial analog watch with premium metallic finish
-</div>
-
-<div class="item-specs">
-SKU: NU1806NM01<br>
-Strap: Metal • Black<br>
-Warranty: 24 Months
-</div>
-
-</td>
-
-<td>1</td>
-
-<td>Analog</td>
-
-<td>₹3,595</td>
-
-<td>
-<strong>₹3,595</strong>
-</td>
-
-</tr>
-
-
-<tr>
-
-<td>
-
-<div class="item-name">
-Titan Men's Timeless Charm
-</div>
-
-<div class="item-desc">
-Classic leather strap watch designed for everyday elegance
-</div>
-
-<div class="item-specs">
-SKU: NL1729SL02<br>
-Strap: Leather • Brown<br>
-Warranty: 24 Months
-</div>
-
-</td>
-
-<td>1</td>
-
-<td>Leather</td>
-
-<td>₹1,795</td>
-
-<td>
-<strong>₹1,795</strong>
-</td>
-
-</tr>
+${itemsHtml}
 
 </tbody>
 
@@ -1050,24 +1063,32 @@ Warranty: 24 Months
 <div class="totals-section">
 
 <div class="items-count">
-Items Purchased: 3
+
+Items Purchased: ${currentReceipt.items.length}
+
 </div>
 
 <div class="totals-table">
 
 <div>
 Subtotal:
-<strong>₹13,339.00</strong>
+<strong>
+₹${currentReceipt.subtotal.toLocaleString("en-IN")}
+</strong>
 </div>
 
 <div>
-GST:
-<strong>₹2,401.01</strong>
+Taxes Included:
+<strong>
+₹${currentReceipt.tax.toLocaleString("en-IN")}
+</strong>
 </div>
 
 <div class="net-total">
 Total:
-<strong>₹15,740.00</strong>
+<strong>
+₹${currentReceipt.total.toLocaleString("en-IN")}
+</strong>
 </div>
 
 </div>
@@ -1090,8 +1111,21 @@ Visa •••• 4532
 </div>
 
 <div class="payment-amount">
-₹15,740.00
+₹${currentReceipt.total.toLocaleString("en-IN")}
 </div>
+
+</div>
+
+
+<div class="warranty-box">
+
+<div class="warranty-title">
+Warranty & Care
+</div>
+
+<p>
+Swarovski offers statutory warranty coverage for genuine branded Swarovski products purchased from Swarovski boutiques or authorized retailers. Please retain this digital receipt as proof of purchase for future warranty, care, or service-related assistance. Warranty coverage may vary depending on product category and applicable terms.
+</p>
 
 </div>
 
@@ -1099,11 +1133,11 @@ Visa •••• 4532
 <div class="footer">
 
 <p>
-<strong>Thank you for choosing Titan!</strong>
+<strong>Thank you for choosing Swarovski.</strong>
 </p>
 
 <p>
-Visit titan.co.in or follow @titanwatchesindia for latest collections and launches.
+Visit www.swarovski.com or follow @swarovski for collections, launches, and inspiration.
 </p>
 
 <div class="powered">
@@ -1112,6 +1146,10 @@ Powered by RDEP
 
 </div>
 
+`
+
+})()}
+
 </body>
 </html>    `
 
@@ -1119,7 +1157,7 @@ Powered by RDEP
     const url = URL.createObjectURL(blob)
     const link = document.createElement("a")
     link.href = url
-    link.download = "Titan_Receipt_SK251107001.html"
+    link.download = "Swarovski_Receipt_SK251107001.html"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -3438,17 +3476,17 @@ Powered by RDEP
 
 
     {/* Modal */}
-    <div className="relative bg-white rounded-3xl w-full max-w-sm mx-4 shadow-2xl border border-[#E6E1EE] overflow-hidden">
+    <div className="relative bg-white rounded-[32px] w-full max-w-sm mx-4 shadow-2xl border border-[#E8E8E8] overflow-hidden">
 
       {/* Header */}
-      <div className="flex justify-between items-center p-5 border-b border-[#F0EDF5] bg-[#F7F5FA]">
+      <div className="flex justify-between items-center p-5 border-b border-[#F1F1F1] bg-[#FAFAFA]">
 
         <div className="flex items-center">
 
           {/* Icon */}
-          <div className="bg-[#2E1A47] p-2.5 rounded-xl mr-3 shadow-sm">
+          <div className="bg-[#111111] p-2.5 rounded-2xl mr-3">
 
-            <History className="h-4 w-4 text-[#C8A96B]" />
+            <History className="h-4 w-4 text-white" />
 
           </div>
 
@@ -3456,15 +3494,15 @@ Powered by RDEP
           {/* Title */}
           <div>
 
-            <h3 className="text-sm font-semibold text-[#1F1B24]">
+            <h3 className="text-[18px] font-light text-[#111111] tracking-[0.01em]">
 
               Purchase History
 
             </h3>
 
-            <div className="text-[11px] text-[#6B6475] mt-0.5">
+            <div className="text-[12px] text-[#666666] mt-1">
 
-              Your recent Titan purchases
+              Your recent Swarovski purchases
 
             </div>
 
@@ -3482,7 +3520,7 @@ Powered by RDEP
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            className="h-4 w-4 text-[#6B6475]"
+            className="h-4 w-4 text-[#666666]"
           >
 
             <path
@@ -3514,27 +3552,27 @@ Powered by RDEP
                 behavior: "smooth",
               })
             }}
-            className="w-full flex items-center p-4 bg-[#F7F5FA] border border-[#E6E1EE] rounded-2xl hover:border-[#2E1A47] transition-all active:scale-[0.99]"
+            className="w-full flex items-center p-4 bg-[#FAFAFA] border border-[#ECECEC] rounded-[24px] hover:border-[#111111] transition-all active:scale-[0.99]"
           >
 
             {/* Icon */}
-            <div className="bg-white border border-[#E6E1EE] p-2.5 rounded-xl mr-3 shadow-sm">
+            <div className="bg-white border border-[#ECECEC] p-2.5 rounded-2xl mr-3">
 
-              <FileText className="h-4 w-4 text-[#2E1A47]" />
+              <FileText className="h-4 w-4 text-[#111111]" />
 
             </div>
 
 
             {/* Content */}
-            <div className="flex-grow text-left">
+            <div className="flex-grow text-left min-w-0">
 
-              <div className="text-sm font-semibold text-[#1F1B24]">
+              <div className="text-[14px] font-medium text-[#111111] truncate">
 
-                Titan World
+                {transaction.branch}
 
               </div>
 
-              <div className="text-[11px] text-[#6B6475] mt-0.5">
+              <div className="text-[11px] text-[#777777] mt-1">
 
                 {transaction.date}
 
@@ -3544,7 +3582,7 @@ Powered by RDEP
 
 
             {/* Amount */}
-            <div className="text-sm font-semibold text-[#2E1A47]">
+            <div className="text-[14px] font-medium text-[#111111] ml-3">
 
               ₹{transaction.amount.toLocaleString("en-IN")}
 
@@ -3560,11 +3598,11 @@ Powered by RDEP
       {/* Footer */}
       <div className="px-4 pb-4 pt-1">
 
-        <div className="bg-[#F7F5FA] border border-[#E6E1EE] rounded-2xl p-3 text-center">
+        <div className="bg-[#FAFAFA] border border-[#ECECEC] rounded-[22px] p-4 text-center">
 
-          <div className="text-[11px] text-[#6B6475] leading-relaxed">
+          <div className="text-[12px] text-[#666666] leading-relaxed">
 
-            Purchases made across Titan World and participating stores may appear here.
+            Eligible purchases across participating Swarovski boutiques and channels may appear within your digital purchase history.
 
           </div>
 
