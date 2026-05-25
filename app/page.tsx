@@ -1152,35 +1152,41 @@ Powered by RDEP
         <div className="flex flex-col w-full gap-3 pb-4 px-3">
 
           {/* Top Section */}
-<div className="bg-white rounded-2xl shadow-md border border-[#E6E1EE] mt-4 mx-3 overflow-hidden">
+<div className="bg-white rounded-[28px] shadow-sm border border-[#E8E8E8] mt-4 mx-3 overflow-hidden">
 
   {/* Header */}
-  <div className="bg-[#2E1A47] px-5 pt-5 pb-6 text-white relative overflow-hidden">
+  <div className="relative overflow-hidden bg-black text-white px-5 pt-5 pb-6">
 
-    {/* Background Gradient */}
-    <div className="absolute inset-0 bg-gradient-to-br from-[#3A2159] to-[#241238] opacity-90" />
+    {/* Luxury Gradient Overlay */}
+    <div className="absolute inset-0 bg-gradient-to-br from-[#111111] via-[#1A1A1A] to-[#2A2A2A]" />
+
+    {/* Soft Metallic Glow */}
+    <div className="absolute -top-20 -right-20 h-56 w-56 rounded-full bg-white/[0.04] blur-3xl" />
 
     <div className="relative z-10">
 
       {/* Top Row */}
       <div className="flex items-start justify-between gap-4">
 
-        {/* Titan Logo */}
-        <div className="bg-white rounded-lg px-3 py-2 shadow-sm">
+        {/* Swarovski Logo */}
+        <div className="bg-white rounded-xl px-4 py-3 shadow-sm border border-white/10">
+
           <img
-            src="/images/design-mode/titan-logo.svg"
-            alt="Titan"
-            className="h-6 w-auto object-contain"
+            src="/images/design-mode/swa-brandlogo-icon.svg"
+            alt="Swarovski"
+            className="h-5 w-auto object-contain"
           />
+
         </div>
 
+
         {/* QR Code */}
-        <div className="bg-white rounded-xl p-2 shadow-sm flex items-center justify-center">
+        <div className="bg-white rounded-2xl p-2.5 shadow-sm flex items-center justify-center border border-[#E5E5E5]">
 
           <img
             src="/images/design-mode/800px-QR_code_for_mobile_English_Wikipedia.svg.png"
             alt="QR Code"
-            className="h-[52px] w-[52px] object-contain"
+            className="h-[54px] w-[54px] object-contain"
           />
 
         </div>
@@ -1189,37 +1195,43 @@ Powered by RDEP
 
 
       {/* Greeting */}
-      <div className="mt-6">
+      <div className="mt-7">
 
-        <div className="text-2xl font-semibold tracking-wide">
+        <div className="text-[28px] leading-none font-light tracking-[0.02em]">
           Thank You {customerName}
         </div>
 
-        <div className="text-sm text-white/75 mt-1">
-          Your Titan purchase is confirmed
+        <div className="text-sm text-white/60 mt-3 tracking-wide">
+          Your Swarovski purchase has been registered
         </div>
 
       </div>
 
 
       {/* Amount Card */}
-      <div className="mt-5 bg-[#221235] rounded-2xl p-5 flex justify-between items-center border border-white/10">
+      <div className="mt-6 bg-white/[0.04] backdrop-blur-md rounded-[24px] p-5 border border-white/10 flex justify-between items-center">
 
         <div>
 
-          <div className="text-xs uppercase tracking-[0.2em] text-[#C8A96B]">
+          <div className="text-[11px] uppercase tracking-[0.28em] text-[#CFCFCF]">
             Amount Paid
           </div>
 
-          <div className="text-4xl font-bold mt-2">
+          <div className="text-4xl font-light mt-2 tracking-tight">
             ₹{currentReceipt.total.toLocaleString("en-IN")}
+          </div>
+
+          <div className="text-xs text-white/45 mt-2 tracking-wide">
+            Inclusive of all taxes
           </div>
 
         </div>
 
-        <div className="h-14 w-14 rounded-full bg-[#C8A96B]/15 border border-[#C8A96B]/20 flex items-center justify-center">
 
-          <User2 className="h-7 w-7 text-[#C8A96B]" />
+        {/* Crystal Inspired Icon */}
+        <div className="h-14 w-14 rounded-full bg-white/[0.05] border border-white/10 flex items-center justify-center">
+
+          <div className="h-7 w-7 rotate-45 rounded-md border border-white/50 bg-white/[0.06]" />
 
         </div>
 
@@ -1233,16 +1245,16 @@ Powered by RDEP
   {/* Receipt Metadata */}
   <div className="p-4 bg-white">
 
-    <div className="bg-[#F7F5FA] rounded-xl border border-[#E6E1EE] p-4 space-y-3">
+    <div className="rounded-2xl border border-[#ECECEC] bg-[#FAFAFA] p-4 space-y-3">
 
       {/* Receipt ID */}
       <div className="flex justify-between items-center gap-3">
 
-        <span className="text-xs text-[#6B6475]">
+        <span className="text-[11px] uppercase tracking-[0.18em] text-[#7A7A7A]">
           Receipt ID
         </span>
 
-        <span className="text-sm font-semibold tracking-wide text-right text-[#1F1B24]">
+        <span className="text-sm font-medium tracking-wide text-right text-[#111111]">
           {currentReceipt.id}
         </span>
 
@@ -1252,11 +1264,11 @@ Powered by RDEP
       {/* Date & Time */}
       <div className="flex justify-between items-center gap-3">
 
-        <span className="text-xs text-[#6B6475]">
+        <span className="text-[11px] uppercase tracking-[0.18em] text-[#7A7A7A]">
           Date & Time
         </span>
 
-        <span className="text-sm font-semibold text-right text-[#1F1B24]">
+        <span className="text-sm font-medium text-right text-[#111111]">
           {currentReceipt.date} • {currentReceipt.time}
         </span>
 
@@ -1266,11 +1278,11 @@ Powered by RDEP
       {/* Store */}
       <div className="flex justify-between items-center gap-3">
 
-        <span className="text-xs text-[#6B6475]">
-          Store
+        <span className="text-[11px] uppercase tracking-[0.18em] text-[#7A7A7A]">
+          Boutique
         </span>
 
-        <span className="text-sm font-semibold text-right text-[#1F1B24]">
+        <span className="text-sm font-medium text-right text-[#111111]">
           {currentReceipt.branch}
         </span>
 
