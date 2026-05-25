@@ -1202,7 +1202,7 @@ Powered by RDEP
         </div>
 
         <div className="text-[15px] text-white/58 mt-3 tracking-[0.01em]">
-          Your Swarovski purchase has been registered
+          Your Swarovski purchase is confirmed!
         </div>
 
       </div>
@@ -1294,23 +1294,23 @@ Powered by RDEP
 
 </div>
           
-          {/* Purchase Details */}
-<div className="bg-white rounded-2xl shadow-md border border-[#E6E1EE] mt-4 mx-3 p-4">
+         {/* Purchase Details */}
+<div className="bg-white rounded-[28px] shadow-sm border border-[#E8E8E8] mt-4 mx-3 p-4">
 
   {/* Header */}
-  <div className="flex items-center justify-between mb-4">
+  <div className="flex items-center justify-between mb-5">
 
-    <h3 className="text-lg font-semibold flex items-center text-[#2E1A47]">
+    <h3 className="text-[20px] font-light flex items-center text-[#111111] tracking-[0.01em]">
 
-      <Watch className="mr-2 h-5 w-5" />
+      <div className="h-5 w-5 rotate-45 rounded-[4px] border border-[#111111] mr-3" />
 
       Purchase Details
 
     </h3>
 
-    <span className="text-xs font-medium border border-[#2E1A47] text-[#2E1A47] px-2 py-1 rounded-full bg-[#F7F5FA]">
+    <span className="text-[11px] font-medium border border-[#DADADA] text-[#555555] px-3 py-1.5 rounded-full bg-[#FAFAFA] tracking-[0.16em] uppercase">
 
-      {currentReceipt.items.length} items
+      {currentReceipt.items.length} Items
 
     </span>
 
@@ -1324,7 +1324,7 @@ Powered by RDEP
 
       <div
         key={product.id}
-        className="bg-[#F7F5FA] rounded-2xl p-4 border border-[#E6E1EE]"
+        className="bg-[#FAFAFA] rounded-[24px] p-4 border border-[#ECECEC]"
       >
 
         {/* Product Header */}
@@ -1333,24 +1333,28 @@ Powered by RDEP
           onClick={() => toggleProductExpansion(product.id)}
         >
 
-          <div className="flex items-center flex-1">
+          <div className="flex items-center flex-1 min-w-0">
 
             <ChevronRight
-              className={`h-4 w-4 mr-3 text-[#2E1A47] transition-transform duration-200 ${
+              className={`h-4 w-4 mr-3 text-[#666666] transition-transform duration-200 ${
                 expandedProducts.includes(product.id)
                   ? "rotate-90"
                   : ""
               }`}
             />
 
-            <div>
+            <div className="min-w-0">
 
-              <div className="font-semibold text-sm text-[#1F1B24]">
+              <div className="font-medium text-[15px] text-[#111111] truncate">
                 {product.name}
               </div>
 
-              <div className="text-xs text-[#6B6475] mt-0.5">
-                {product.category}
+              <div className="text-[12px] text-[#777777] mt-1 tracking-[0.01em]">
+
+                {product.type}
+                {product.subType ? ` • ${product.subType}` : ""}
+                {product.collection ? ` • ${product.collection}` : ""}
+
               </div>
 
             </div>
@@ -1358,13 +1362,13 @@ Powered by RDEP
           </div>
 
 
-          <div className="text-right">
+          <div className="text-right ml-4">
 
-            <div className="text-xs text-[#6B6475]">
+            <div className="text-[11px] text-[#8A8A8A]">
               Qty {product.quantity}
             </div>
 
-            <div className="font-semibold text-sm text-[#2E1A47] mt-1">
+            <div className="font-medium text-[15px] text-[#111111] mt-1">
               ₹{(product.price * product.quantity).toLocaleString("en-IN")}
             </div>
 
@@ -1376,69 +1380,160 @@ Powered by RDEP
         {/* Expanded Product Info */}
         {expandedProducts.includes(product.id) && (
 
-          <div className="mt-4 pt-4 border-t border-[#DDD5EA]">
+          <div className="mt-4 pt-4 border-t border-[#E4E4E4]">
 
-            {/* Description */}
-            <div className="text-xs text-[#6B6475] leading-relaxed mb-4">
-              {product.description}
-            </div>
+            {/* Dynamic Specs */}
+            <div className="grid grid-cols-2 gap-y-3 gap-x-4 text-[12px]">
 
-
-            {/* Specs */}
-            <div className="grid grid-cols-2 gap-y-2 text-xs text-[#4A4453]">
-
+              {/* Common */}
               <div>
-                <span className="text-[#6B6475]">
-                  SKU:
-                </span>{" "}
-                <span className="font-medium">
-                  {product.skuId}
+                <span className="text-[#8A8A8A]">
+                  Article No.
                 </span>
+
+                <div className="font-medium text-[#111111] mt-1">
+                  {product.articleNo}
+                </div>
               </div>
 
+
+              {product.finish && (
+                <div>
+                  <span className="text-[#8A8A8A]">
+                    Finish
+                  </span>
+
+                  <div className="font-medium text-[#111111] mt-1">
+                    {product.finish}
+                  </div>
+                </div>
+              )}
+
+
+              {product.stoneCut && (
+                <div>
+                  <span className="text-[#8A8A8A]">
+                    Stone Cut
+                  </span>
+
+                  <div className="font-medium text-[#111111] mt-1">
+                    {product.stoneCut}
+                  </div>
+                </div>
+              )}
+
+
+              {product.stoneCuts && (
+                <div>
+                  <span className="text-[#8A8A8A]">
+                    Stone Cuts
+                  </span>
+
+                  <div className="font-medium text-[#111111] mt-1">
+                    {product.stoneCuts}
+                  </div>
+                </div>
+              )}
+
+
+              {product.stoneColor && (
+                <div>
+                  <span className="text-[#8A8A8A]">
+                    Crystal Color
+                  </span>
+
+                  <div className="font-medium text-[#111111] mt-1">
+                    {product.stoneColor}
+                  </div>
+                </div>
+              )}
+
+
+              {product.caseSize && (
+                <div>
+                  <span className="text-[#8A8A8A]">
+                    Case Size
+                  </span>
+
+                  <div className="font-medium text-[#111111] mt-1">
+                    {product.caseSize}
+                  </div>
+                </div>
+              )}
+
+
+              {product.mechanism && (
+                <div>
+                  <span className="text-[#8A8A8A]">
+                    Movement
+                  </span>
+
+                  <div className="font-medium text-[#111111] mt-1">
+                    {product.mechanism}
+                  </div>
+                </div>
+              )}
+
+
+              {product.waterResistance && (
+                <div>
+                  <span className="text-[#8A8A8A]">
+                    Water Resistance
+                  </span>
+
+                  <div className="font-medium text-[#111111] mt-1">
+                    {product.waterResistance}
+                  </div>
+                </div>
+              )}
+
+
+              {product.strap && (
+                <div>
+                  <span className="text-[#8A8A8A]">
+                    Strap
+                  </span>
+
+                  <div className="font-medium text-[#111111] mt-1">
+                    {product.strap}
+                  </div>
+                </div>
+              )}
+
+
+              {product.madeIn && (
+                <div>
+                  <span className="text-[#8A8A8A]">
+                    Made In
+                  </span>
+
+                  <div className="font-medium text-[#111111] mt-1">
+                    {product.madeIn}
+                  </div>
+                </div>
+              )}
+
+
+              {/* Warranty / Ownership */}
               <div>
-                <span className="text-[#6B6475]">
-                  Gender:
-                </span>{" "}
-                <span className="font-medium">
-                  {product.gender}
+                <span className="text-[#8A8A8A]">
+                  Purchase Status
                 </span>
+
+                <div className="font-medium text-[#111111] mt-1">
+                  {product.warrantyStatus || "Purchase Registered"}
+                </div>
               </div>
 
-              <div>
-                <span className="text-[#6B6475]">
-                  Strap:
-                </span>{" "}
-                <span className="font-medium">
-                  {product.strapMaterial}
-                </span>
-              </div>
 
               <div>
-                <span className="text-[#6B6475]">
-                  Color:
-                </span>{" "}
-                <span className="font-medium">
-                  {product.strapColor}
+                <span className="text-[#8A8A8A]">
+                  Proof of Purchase
                 </span>
-              </div>
 
-              <div>
-                <span className="text-[#6B6475]">
-                  Warranty:
-                </span>{" "}
-                <span className="font-medium">
-                  {product.warranty}
-                </span>
-              </div>
-
-              <div>
-                <span className="text-[#6B6475]">
-                  GST:
-                </span>{" "}
-                <span className="font-medium">
-                  ₹{product.tax?.toFixed(2)}
-                </span>
+                <div className="font-medium text-[#111111] mt-1">
+                  Available Digitally
+                </div>
               </div>
 
             </div>
@@ -1453,12 +1548,12 @@ Powered by RDEP
 
           <button
             onClick={() => toggleItemFeedback(product.id)}
-            className="text-xs text-[#2E1A47] font-semibold"
+            className="text-[12px] text-[#111111] font-medium"
           >
 
             {expandedItemFeedback.includes(product.id)
-              ? "Hide product feedback"
-              : "Rate this product"}
+              ? "Hide Product Feedback"
+              : "Share Product Feedback"}
 
           </button>
 
@@ -1468,10 +1563,10 @@ Powered by RDEP
         {/* Item Feedback Panel */}
         {expandedItemFeedback.includes(product.id) && (
 
-          <div className="mt-3 bg-white border border-[#E6E1EE] rounded-2xl p-4">
+          <div className="mt-3 bg-white border border-[#ECECEC] rounded-[22px] p-4">
 
             {/* Rating */}
-            <div className="flex justify-center gap-2 mb-4">
+            <div className="flex justify-center gap-2 mb-5">
 
               {[1,2,3,4,5].map((star) => (
 
@@ -1483,8 +1578,8 @@ Powered by RDEP
                   <Star
                     className={`h-5 w-5 transition-colors ${
                       star <= (itemFeedback[product.id]?.rating || 0)
-                        ? "fill-[#C8A96B] text-[#C8A96B]"
-                        : "text-gray-300"
+                        ? "fill-[#111111] text-[#111111]"
+                        : "text-[#D4D4D4]"
                     }`}
                   />
 
@@ -1495,16 +1590,26 @@ Powered by RDEP
             </div>
 
 
-            {/* Tags */}
+            {/* Dynamic Feedback Tags */}
             <div className="flex flex-wrap gap-2 justify-center">
 
-              {[
-                "Design",
-                "Comfort",
-                "Premium Feel",
-                "Value",
-                "Features",
-              ].map((tag) => {
+              {(
+                product.type === "Watch"
+                  ? [
+                      "Design",
+                      "Craftsmanship",
+                      "Comfort",
+                      "Dial Finish",
+                      "Premium Feel",
+                    ]
+                  : [
+                      "Design",
+                      "Sparkle",
+                      "Finish",
+                      "Styling",
+                      "Premium Feel",
+                    ]
+              ).map((tag) => {
 
                 const active =
                   itemFeedback[product.id]?.tags?.includes(tag)
@@ -1516,8 +1621,8 @@ Powered by RDEP
                     onClick={() => toggleItemTag(product.id, tag)}
                     className={`text-[11px] px-3 py-1.5 rounded-full border transition-colors ${
                       active
-                        ? "bg-[#2E1A47] text-white border-[#2E1A47]"
-                        : "border-[#DDD5EA] text-[#6B6475] bg-[#F7F5FA]"
+                        ? "bg-[#111111] text-white border-[#111111]"
+                        : "border-[#DDDDDD] text-[#666666] bg-[#FAFAFA]"
                     }`}
                   >
 
@@ -1543,15 +1648,15 @@ Powered by RDEP
 
 
   {/* Totals */}
-  <div className="mt-5 pt-4 border-t border-[#E6E1EE] space-y-3 text-sm">
+  <div className="mt-6 pt-5 border-t border-[#ECECEC] space-y-3 text-sm">
 
     <div className="flex justify-between">
 
-      <span className="text-[#6B6475]">
+      <span className="text-[#7A7A7A]">
         Subtotal
       </span>
 
-      <span className="font-medium text-[#1F1B24]">
+      <span className="font-medium text-[#111111]">
         ₹{currentReceipt.subtotal.toLocaleString("en-IN")}
       </span>
 
@@ -1560,24 +1665,24 @@ Powered by RDEP
 
     <div className="flex justify-between">
 
-      <span className="text-[#6B6475]">
-        GST
+      <span className="text-[#7A7A7A]">
+        GST Included
       </span>
 
-      <span className="font-medium text-[#1F1B24]">
+      <span className="font-medium text-[#111111]">
         ₹{currentReceipt.tax.toLocaleString("en-IN")}
       </span>
 
     </div>
 
 
-    <div className="flex justify-between text-base font-semibold pt-3 border-t border-[#E6E1EE]">
+    <div className="flex justify-between text-[17px] font-medium pt-4 border-t border-[#ECECEC]">
 
-      <span className="text-[#1F1B24]">
+      <span className="text-[#111111]">
         Total Paid
       </span>
 
-      <span className="text-[#2E1A47]">
+      <span className="text-[#111111]">
         ₹{currentReceipt.total.toLocaleString("en-IN")}
       </span>
 
@@ -1589,11 +1694,11 @@ Powered by RDEP
   {/* Payment */}
   <div className="mt-5">
 
-    <div className="bg-[#F7F5FA] border border-[#E6E1EE] rounded-2xl p-4 flex items-center justify-between">
+    <div className="bg-[#FAFAFA] border border-[#ECECEC] rounded-[24px] p-4 flex items-center justify-between">
 
       <div className="flex items-center">
 
-        <div className="w-10 h-10 bg-[#2E1A47] rounded-xl flex items-center justify-center mr-3">
+        <div className="w-11 h-11 bg-[#111111] rounded-2xl flex items-center justify-center mr-3">
 
           <svg
             className="w-5 h-5 text-white"
@@ -1625,11 +1730,11 @@ Powered by RDEP
 
         <div>
 
-          <div className="text-sm font-semibold text-[#1F1B24]">
+          <div className="text-[15px] font-medium text-[#111111]">
             Card Payment
           </div>
 
-          <div className="text-xs text-[#6B6475] mt-0.5">
+          <div className="text-[12px] text-[#7A7A7A] mt-1">
             Visa •••• 4532
           </div>
 
@@ -1638,7 +1743,7 @@ Powered by RDEP
       </div>
 
 
-      <div className="text-sm font-semibold text-[#2E1A47]">
+      <div className="text-[15px] font-medium text-[#111111]">
 
         ₹{currentReceipt.total.toLocaleString("en-IN")}
 
@@ -1649,7 +1754,6 @@ Powered by RDEP
   </div>
 
 </div>
-
           {/* Feedback Section */}
 <div className="bg-white rounded-2xl border border-[#E6E1EE] shadow-md mx-3 mt-4 p-4">
 
