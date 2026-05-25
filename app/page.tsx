@@ -1158,10 +1158,10 @@ Powered by RDEP
   <div className="relative overflow-hidden bg-black text-white px-5 pt-5 pb-6">
 
     {/* Luxury Gradient Overlay */}
-    <div className="absolute inset-0 bg-gradient-to-br from-[#111111] via-[#1A1A1A] to-[#2A2A2A]" />
+    <div className="absolute inset-0 bg-gradient-to-br from-[#050505] via-[#111111] to-[#242424]" />
 
-    {/* Soft Metallic Glow */}
-    <div className="absolute -top-20 -right-20 h-56 w-56 rounded-full bg-white/[0.04] blur-3xl" />
+    {/* Soft Glow */}
+    <div className="absolute -top-24 -right-24 h-64 w-64 rounded-full bg-white/[0.03] blur-3xl" />
 
     <div className="relative z-10">
 
@@ -1174,7 +1174,7 @@ Powered by RDEP
           <img
             src="/images/design-mode/swa-brandlogo-icon.svg"
             alt="Swarovski"
-            className="h-5 w-auto object-contain"
+            className="h-6 w-auto object-contain"
           />
 
         </div>
@@ -1197,11 +1197,11 @@ Powered by RDEP
       {/* Greeting */}
       <div className="mt-7">
 
-        <div className="text-[28px] leading-none font-light tracking-[0.02em]">
+        <div className="text-[24px] leading-none font-light tracking-[0.01em]">
           Thank You {customerName}
         </div>
 
-        <div className="text-sm text-white/60 mt-3 tracking-wide">
+        <div className="text-[15px] text-white/58 mt-3 tracking-[0.01em]">
           Your Swarovski purchase has been registered
         </div>
 
@@ -1213,15 +1213,15 @@ Powered by RDEP
 
         <div>
 
-          <div className="text-[11px] uppercase tracking-[0.28em] text-[#CFCFCF]">
+          <div className="text-[10px] uppercase tracking-[0.32em] text-[#CFCFCF]">
             Amount Paid
           </div>
 
-          <div className="text-4xl font-light mt-2 tracking-tight">
+          <div className="text-[52px] font-extralight mt-2 tracking-tight leading-none">
             ₹{currentReceipt.total.toLocaleString("en-IN")}
           </div>
 
-          <div className="text-xs text-white/45 mt-2 tracking-wide">
+          <div className="text-[13px] text-white/45 mt-3">
             Inclusive of all taxes
           </div>
 
@@ -1245,16 +1245,16 @@ Powered by RDEP
   {/* Receipt Metadata */}
   <div className="p-4 bg-white">
 
-    <div className="rounded-2xl border border-[#ECECEC] bg-[#FAFAFA] p-4 space-y-3">
+    <div className="rounded-2xl border border-[#ECECEC] bg-[#FAFAFA] p-5 space-y-4">
 
       {/* Receipt ID */}
-      <div className="flex justify-between items-center gap-3">
+      <div className="flex justify-between items-start gap-4">
 
-        <span className="text-[11px] uppercase tracking-[0.18em] text-[#7A7A7A]">
+        <span className="text-[11px] tracking-[0.18em] text-[#8B8B8B] uppercase">
           Receipt ID
         </span>
 
-        <span className="text-sm font-medium tracking-wide text-right text-[#111111]">
+        <span className="text-[15px] font-medium tracking-[0.01em] text-right text-[#111111]">
           {currentReceipt.id}
         </span>
 
@@ -1262,13 +1262,13 @@ Powered by RDEP
 
 
       {/* Date & Time */}
-      <div className="flex justify-between items-center gap-3">
+      <div className="flex justify-between items-start gap-4">
 
-        <span className="text-[11px] uppercase tracking-[0.18em] text-[#7A7A7A]">
+        <span className="text-[11px] tracking-[0.18em] text-[#8B8B8B] uppercase">
           Date & Time
         </span>
 
-        <span className="text-sm font-medium text-right text-[#111111]">
+        <span className="text-[15px] font-medium text-right text-[#111111]">
           {currentReceipt.date} • {currentReceipt.time}
         </span>
 
@@ -1276,13 +1276,13 @@ Powered by RDEP
 
 
       {/* Store */}
-      <div className="flex justify-between items-center gap-3">
+      <div className="flex justify-between items-start gap-4">
 
-        <span className="text-[11px] uppercase tracking-[0.18em] text-[#7A7A7A]">
-          Boutique
+        <span className="text-[11px] tracking-[0.18em] text-[#8B8B8B] uppercase">
+          Store
         </span>
 
-        <span className="text-sm font-medium text-right text-[#111111]">
+        <span className="text-[15px] font-medium leading-snug text-right text-[#111111] max-w-[220px]">
           {currentReceipt.branch}
         </span>
 
