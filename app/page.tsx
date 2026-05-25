@@ -2088,15 +2088,15 @@ Powered by RDEP
     />
 
     {/* Overlay */}
-    <div className="absolute inset-0 bg-gradient-to-r from-[#DDE8F5] via-[#DDE8F5]/92 to-transparent" />
+    <div className="absolute inset-0 bg-gradient-to-r from-[#DDE8F5] via-[#DDE8F5]/94 to-transparent" />
 
     {/* Text Content */}
     <div className="absolute inset-0 flex flex-col justify-center px-5 z-10">
 
-      <div className="max-w-[58%]">
+      <div className="max-w-[56%]">
 
         {/* Badge */}
-        <div className="inline-flex items-center rounded-full bg-white/60 backdrop-blur-sm border border-black/5 px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-[#111111] mb-3">
+        <div className="inline-flex items-center rounded-full bg-white/70 backdrop-blur-sm border border-black/5 px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-[#111111] mb-3">
 
           Swarovski Club
 
@@ -2114,7 +2114,7 @@ Powered by RDEP
         {/* Subtitle */}
         <div className="text-[13px] leading-relaxed text-[#333333] mt-2">
 
-          Access exclusive rewards, member events, birthday benefits, and elevated shopping experiences.
+          Access exclusive rewards, member events, style updates, and elevated shopping experiences.
 
         </div>
 
@@ -2127,43 +2127,91 @@ Powered by RDEP
 
   <div className="p-4">
 
-    {/* Membership Tiers */}
-    <div className="grid grid-cols-3 gap-3 mb-5">
+    {/* Tier Section */}
+    <div className="bg-[#FAFAFA] rounded-[24px] border border-[#ECECEC] p-4">
 
-      <div className="bg-[#FAFAFA] rounded-[22px] p-3 text-center border border-[#ECECEC]">
+      <div className="text-[15px] font-medium text-[#111111] mb-4">
 
-        <div className="text-[18px] font-medium text-[#111111]">
-          Bronze
-        </div>
-
-        <div className="text-[11px] text-[#777777] mt-1">
-          Member Tier
-        </div>
+        Member Tiers
 
       </div>
 
 
-      <div className="bg-[#FAFAFA] rounded-[22px] p-3 text-center border border-[#ECECEC]">
+      <div className="grid grid-cols-5 gap-2 text-center">
 
-        <div className="text-[18px] font-medium text-[#111111]">
-          Silver
+        {/* Bronze */}
+        <div>
+
+          <div className="w-11 h-14 rounded-[14px] bg-gradient-to-b from-[#D7B08B] to-[#B78561] mx-auto mb-2 border border-[#C99A74]" />
+
+          <div className="text-[11px] font-medium text-[#111111]">
+            Bronze
+          </div>
+
         </div>
 
-        <div className="text-[11px] text-[#777777] mt-1">
-          From ₹26,000
+
+        {/* Silver */}
+        <div>
+
+          <div className="w-11 h-14 rounded-[14px] bg-gradient-to-b from-[#F1F1F1] to-[#CFCFCF] mx-auto mb-2 border border-[#DADADA]" />
+
+          <div className="text-[11px] font-medium text-[#111111]">
+            Silver
+          </div>
+
+          <div className="text-[10px] text-[#777777] mt-1">
+            ₹26K+
+          </div>
+
         </div>
 
-      </div>
 
+        {/* Gold */}
+        <div>
 
-      <div className="bg-[#FAFAFA] rounded-[22px] p-3 text-center border border-[#ECECEC]">
+          <div className="w-11 h-14 rounded-[14px] bg-gradient-to-b from-[#F6E5AE] to-[#D8B765] mx-auto mb-2 border border-[#E4C87B]" />
 
-        <div className="text-[18px] font-medium text-[#111111]">
-          Gold
+          <div className="text-[11px] font-medium text-[#111111]">
+            Gold
+          </div>
+
+          <div className="text-[10px] text-[#777777] mt-1">
+            ₹62K+
+          </div>
+
         </div>
 
-        <div className="text-[11px] text-[#777777] mt-1">
-          From ₹62,000
+
+        {/* Platinum */}
+        <div>
+
+          <div className="w-11 h-14 rounded-[14px] bg-gradient-to-b from-[#73857E] to-[#41534C] mx-auto mb-2 border border-[#62736C]" />
+
+          <div className="text-[11px] font-medium text-[#111111]">
+            Platinum
+          </div>
+
+          <div className="text-[10px] text-[#777777] mt-1">
+            ₹120K+
+          </div>
+
+        </div>
+
+
+        {/* Crystal */}
+        <div>
+
+          <div className="w-11 h-14 rounded-[14px] bg-gradient-to-b from-[#F6F2FF] via-[#E8D8FF] to-[#D6F5FF] mx-auto mb-2 border border-[#E2D7F7]" />
+
+          <div className="text-[11px] font-medium text-[#111111]">
+            Crystal
+          </div>
+
+          <div className="text-[10px] text-[#777777] mt-1">
+            ₹350K+
+          </div>
+
         </div>
 
       </div>
@@ -2171,12 +2219,12 @@ Powered by RDEP
     </div>
 
 
-    {/* Membership Benefits */}
-    <div className="bg-[#FAFAFA] rounded-[24px] border border-[#ECECEC] p-4">
+    {/* Benefits */}
+    <div className="mt-5 bg-[#FAFAFA] rounded-[24px] border border-[#ECECEC] p-4">
 
       <div className="text-[15px] font-medium text-[#111111] mb-4">
 
-        Swarovski Club Benefits
+        Member Benefits
 
       </div>
 
@@ -2188,7 +2236,7 @@ Powered by RDEP
           <div className="w-1.5 h-1.5 rounded-full bg-[#111111] mt-2" />
 
           <span>
-            10% off on online sign up
+            10% off for online sign up
           </span>
 
         </div>
@@ -2199,7 +2247,7 @@ Powered by RDEP
           <div className="w-1.5 h-1.5 rounded-full bg-[#111111] mt-2" />
 
           <span>
-            Invitations to exclusive pre-sales and member events
+            Collection, trend, and style news updates
           </span>
 
         </div>
@@ -2210,7 +2258,7 @@ Powered by RDEP
           <div className="w-1.5 h-1.5 rounded-full bg-[#111111] mt-2" />
 
           <span>
-            Birthday rewards and personalized member experiences
+            Invitations to exclusive pre-sales and special events
           </span>
 
         </div>
@@ -2221,7 +2269,7 @@ Powered by RDEP
           <div className="w-1.5 h-1.5 rounded-full bg-[#111111] mt-2" />
 
           <span>
-            Collection, trend, and style updates throughout the year
+            Complimentary standard shipping for eligible tiers
           </span>
 
         </div>
@@ -2232,7 +2280,7 @@ Powered by RDEP
           <div className="w-1.5 h-1.5 rounded-full bg-[#111111] mt-2" />
 
           <span>
-            Unlock elevated benefits as you move through membership tiers
+            Unlock elevated rewards and privileges as your tier progresses
           </span>
 
         </div>
@@ -2242,7 +2290,7 @@ Powered by RDEP
     </div>
 
 
-    {/* Membership Journey */}
+    {/* How It Works */}
     <div className="mt-5">
 
       <div className="text-[15px] font-medium text-[#111111] mb-4">
@@ -2306,31 +2354,18 @@ Powered by RDEP
     </div>
 
 
-    {/* Swarovski SCS */}
+    {/* SCS Section */}
     <div className="mt-5 bg-[#F5F8F2] border border-[#E3E9DD] rounded-[24px] p-4">
 
-      <div className="flex items-start justify-between gap-4">
+      <div className="text-[18px] font-light text-[#111111] leading-tight">
 
-        <div>
+        Already A Club Member?
 
-          <div className="text-[18px] font-light text-[#111111] leading-tight">
+      </div>
 
-            Swarovski Crystal Society
+      <div className="text-[13px] text-[#555555] leading-relaxed mt-2">
 
-          </div>
-
-          <div className="text-[13px] text-[#555555] leading-relaxed mt-2">
-
-            Explore Swarovski's premium collector membership with access to exclusive crystal creations, events, and elevated member privileges.
-
-          </div>
-
-        </div>
-
-
-        <div className="hidden sm:block text-[42px] leading-none">
-          ✧
-        </div>
+        Upgrade to Swarovski Crystal Society and access even more exclusive creations, events, and collector privileges.
 
       </div>
 
@@ -2348,38 +2383,21 @@ Powered by RDEP
       </a>
 
     </div>
-
-
-    {/* CTA */}
-    <div className="mt-5">
-
-      <a
-        href="https://www.swarovski.com/en-IN/s-swarovski-club/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block w-full text-center bg-[#111111] text-white rounded-[22px] py-3 text-[14px] font-medium hover:opacity-95 transition"
-      >
-
-        Join Swarovski Club
-
-      </a>
-
-    </div>
-
+    
   </div>
 
 </div>
           
 
-          {/* Join Titan Encircle Section */}
-<div className="bg-white rounded-2xl border border-[#E6E1EE] shadow-md mx-3 mt-4 p-4">
+          {/* Join Swarovski Club Section */}
+<div className="bg-white rounded-[28px] border border-[#E8E8E8] shadow-sm mx-3 mt-4 p-4">
 
   {profileUpdateSuccess ? (
 
-    <div className="text-center py-5 bg-[#F7F5FA] rounded-2xl border border-[#E6E1EE]">
+    <div className="text-center py-6 bg-[#FAFAFA] rounded-[24px] border border-[#ECECEC]">
 
       {/* Success Icon */}
-      <div className="w-14 h-14 bg-[#2E1A47] rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+      <div className="w-14 h-14 bg-[#111111] rounded-full flex items-center justify-center mx-auto mb-5">
 
         <svg
           className="w-7 h-7 text-white"
@@ -2401,25 +2419,25 @@ Powered by RDEP
 
 
       {/* Success Text */}
-      <div className="text-base font-semibold text-[#1F1B24] mb-1">
+      <div className="text-[18px] font-light text-[#111111] mb-2 tracking-[0.01em]">
 
-        Welcome to Titan Encircle
+        Welcome To Swarovski Club
 
       </div>
 
-      <div className="text-sm text-[#6B6475] leading-relaxed px-4">
+      <div className="text-[14px] text-[#666666] leading-relaxed px-5">
 
-        Reward points from this purchase have been added to your Encircle membership account.
+        Your Swarovski Club membership has been activated successfully. Future purchases can help unlock elevated member tiers and benefits.
 
       </div>
 
 
       {/* Badge */}
-      <div className="mt-4 inline-flex items-center gap-2 bg-[#2E1A47] text-white text-xs font-medium px-3 py-1.5 rounded-full">
+      <div className="mt-5 inline-flex items-center gap-2 bg-[#111111] text-white text-[11px] font-medium px-4 py-2 rounded-full tracking-[0.08em] uppercase">
 
-        <span className="w-2 h-2 rounded-full bg-[#C8A96B]" />
+        <span className="w-2 h-2 rounded-full bg-white" />
 
-        +780 Encircle Points Added
+        Membership Active
 
       </div>
 
@@ -2430,12 +2448,12 @@ Powered by RDEP
     <>
 
       {/* Header */}
-      <div className="flex items-start justify-between mb-4">
+      <div className="flex items-start justify-between mb-5">
 
         <div className="flex items-start">
 
           {/* Icon */}
-          <div className="bg-[#2E1A47] p-2.5 rounded-xl mr-3 shadow-sm">
+          <div className="bg-[#111111] p-2.5 rounded-2xl mr-3">
 
             <User2 className="h-4 w-4 text-white" />
 
@@ -2445,36 +2463,40 @@ Powered by RDEP
           {/* Text */}
           <div>
 
-            <div className="text-base font-semibold text-[#1F1B24]">
+            <div className="text-[18px] font-light text-[#111111] tracking-[0.01em]">
 
-              Join Titan Encircle
+              Join Swarovski Club
 
             </div>
 
+            <div className="text-[13px] text-[#666666] mt-1 leading-relaxed max-w-[240px]">
+
+              Access member rewards, exclusive events, style updates, and elevated shopping experiences.
+
+            </div>
 
           </div>
 
         </div>
 
 
-        {/* Points Badge */}
-        <span className="text-[10px] font-semibold bg-[#C8A96B] text-white px-2.5 py-1 rounded-full whitespace-nowrap">
+        {/* Tier Badge */}
+        <span className="text-[10px] font-medium bg-[#FAFAFA] border border-[#E4E4E4] text-[#555555] px-3 py-1 rounded-full whitespace-nowrap tracking-[0.16em] uppercase">
 
-          +780 pts
+          Bronze
 
         </span>
 
       </div>
 
 
-
       {/* Form */}
       <div className="space-y-3">
 
         {/* Full Name */}
-        <div className="space-y-1.5">
+        <div className="space-y-2">
 
-          <label className="text-[11px] font-semibold text-[#6B6475] uppercase tracking-wide">
+          <label className="text-[11px] font-medium text-[#777777] uppercase tracking-[0.18em]">
 
             Full Name
 
@@ -2490,16 +2512,16 @@ Powered by RDEP
                 name: e.target.value,
               }))
             }
-            className="w-full h-11 px-4 text-sm border border-[#DDD5EA] rounded-xl bg-white focus:outline-none focus:border-[#2E1A47] transition-colors"
+            className="w-full h-12 px-4 text-[14px] border border-[#E4E4E4] rounded-[18px] bg-white focus:outline-none focus:border-[#111111] transition-colors"
           />
 
         </div>
 
 
         {/* Email */}
-        <div className="space-y-1.5">
+        <div className="space-y-2">
 
-          <label className="text-[11px] font-semibold text-[#6B6475] uppercase tracking-wide">
+          <label className="text-[11px] font-medium text-[#777777] uppercase tracking-[0.18em]">
 
             Email Address
 
@@ -2515,16 +2537,16 @@ Powered by RDEP
                 email: e.target.value,
               }))
             }
-            className="w-full h-11 px-4 text-sm border border-[#DDD5EA] rounded-xl bg-white focus:outline-none focus:border-[#2E1A47] transition-colors"
+            className="w-full h-12 px-4 text-[14px] border border-[#E4E4E4] rounded-[18px] bg-white focus:outline-none focus:border-[#111111] transition-colors"
           />
 
         </div>
 
 
         {/* Mobile */}
-        <div className="space-y-1.5">
+        <div className="space-y-2">
 
-          <label className="text-[11px] font-semibold text-[#6B6475] uppercase tracking-wide">
+          <label className="text-[11px] font-medium text-[#777777] uppercase tracking-[0.18em]">
 
             Mobile Number
 
@@ -2540,8 +2562,26 @@ Powered by RDEP
                 mobile: e.target.value,
               }))
             }
-            className="w-full h-11 px-4 text-sm border border-[#DDD5EA] rounded-xl bg-white focus:outline-none focus:border-[#2E1A47] transition-colors"
+            className="w-full h-12 px-4 text-[14px] border border-[#E4E4E4] rounded-[18px] bg-white focus:outline-none focus:border-[#111111] transition-colors"
           />
+
+        </div>
+
+      </div>
+
+
+      {/* Membership Note */}
+      <div className="mt-4 bg-[#FAFAFA] border border-[#ECECEC] rounded-[22px] p-4">
+
+        <div className="text-[11px] uppercase tracking-[0.18em] text-[#777777] mb-2">
+
+          Membership Journey
+
+        </div>
+
+        <div className="text-[13px] text-[#555555] leading-relaxed">
+
+          Swarovski Club members progress through Bronze, Silver, Gold, Platinum, and Crystal tiers based on eligible purchases within a 12-month period.
 
         </div>
 
@@ -2550,19 +2590,19 @@ Powered by RDEP
 
       {/* CTA */}
       <button
-        className="w-full mt-5 bg-[#2E1A47] text-white h-12 text-sm font-semibold rounded-2xl shadow-sm transition active:scale-[0.98] hover:opacity-95"
+        className="w-full mt-5 bg-[#111111] text-white h-12 text-[14px] font-medium rounded-[22px] transition active:scale-[0.98] hover:opacity-95"
         onClick={handleProfileUpdate}
       >
 
-        Join Titan Encircle
+        Join Swarovski Club
 
       </button>
 
 
       {/* Footer Text */}
-      <div className="text-[10px] text-[#6B6475] text-center leading-relaxed mt-3 px-2">
+      <div className="text-[11px] text-[#777777] text-center leading-relaxed mt-4 px-3">
 
-        By joining Titan Encircle, you agree to receive loyalty benefits, exclusive offers and member communications.
+        By joining Swarovski Club, you agree to receive member benefits, exclusive invitations, and brand communications.
 
       </div>
 
