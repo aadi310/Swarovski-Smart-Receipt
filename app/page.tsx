@@ -1968,21 +1968,21 @@ Powered by RDEP
             />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/20 to-transparent" />
 
             {/* Content */}
-            <div className="absolute inset-0 flex flex-col justify-center px-6 z-10">
+            <div className="absolute inset-0 flex flex-col justify-end px-5 pb-5 z-10">
 
-              <div className="max-w-[65%]">
+              <div className="max-w-[58%]">
 
-                <div className="text-white text-[24px] leading-tight font-light tracking-[0.01em]">
+                <div className="text-white text-[16px] leading-snug font-normal tracking-[0.01em]">
 
                   Ariana Grande x Swarovski Capsule Collection
 
                 </div>
 
 
-                <button className="mt-4 h-10 px-5 rounded-full bg-white text-[#111111] text-[12px] font-medium tracking-[0.08em] uppercase">
+                <button className="mt-3 h-8 px-4 rounded-full bg-white/95 text-[#111111] text-[10px] font-medium tracking-[0.08em] uppercase">
 
                   Discover More
 
@@ -2019,21 +2019,21 @@ Powered by RDEP
             />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/25 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/15 to-transparent" />
 
             {/* Content */}
-            <div className="absolute inset-0 flex flex-col justify-center px-6 z-10">
+            <div className="absolute inset-0 flex flex-col justify-end px-5 pb-5 z-10">
 
-              <div className="max-w-[60%]">
+              <div className="max-w-[55%]">
 
-                <div className="text-white text-[26px] leading-tight font-light tracking-[0.01em]">
+                <div className="text-white text-[17px] leading-snug font-normal tracking-[0.01em]">
 
                   Millenia Collection
 
                 </div>
 
 
-                <button className="mt-4 h-10 px-5 rounded-full bg-white text-[#111111] text-[12px] font-medium tracking-[0.08em] uppercase">
+                <button className="mt-3 h-8 px-4 rounded-full bg-white/95 text-[#111111] text-[10px] font-medium tracking-[0.08em] uppercase">
 
                   Shop Now
 
@@ -2074,6 +2074,7 @@ Powered by RDEP
   </Carousel>
 
 </div>
+          
           {/* Rewards Loyalty Section */}
 <div className="bg-white rounded-2xl shadow-md border border-[#E6E1EE] mt-4 mx-3 overflow-hidden">
 
