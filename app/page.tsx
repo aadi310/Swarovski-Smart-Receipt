@@ -2612,238 +2612,239 @@ Powered by RDEP
 
 </div>
           
-         {/* Personalized Offers Section */}
-<div className="bg-white rounded-2xl border border-[#E6E1EE] shadow-md mx-3 mt-4 p-4">
+        {/* Product Recommendations */}
+<div className="bg-white rounded-[28px] border border-[#E8E8E8] shadow-sm mx-3 mt-4 p-4">
 
   {/* Header */}
-  <div className="flex items-center justify-between mb-4">
+  <div className="flex items-center justify-between mb-5">
 
-    <div className="flex items-center">
+    <div>
 
-      {/* Icon */}
-      <div className="bg-[#2E1A47] p-2.5 rounded-xl mr-3 shadow-sm">
+      <div className="text-[20px] font-light text-[#111111] tracking-[0.01em]">
 
-        <Sparkles className="h-4 w-4 text-[#C8A96B]" />
+        Recommended For You
 
       </div>
 
+      <div className="text-[13px] text-[#666666] mt-1">
 
-      {/* Title */}
-      <div>
-
-        <h3 className="text-base font-semibold text-[#1F1B24]">
-
-          Personalized Offers
-
-        </h3>
-
-        <div className="text-xs text-[#6B6475] mt-0.5">
-
-          Just for Titan Encircle members
-
-        </div>
+        Discover more from Swarovski collections
 
       </div>
 
     </div>
 
 
-    {/* Badge */}
-    <span className="text-[10px] font-semibold text-[#2E1A47] bg-[#F7F5FA] border border-[#DDD5EA] px-2.5 py-1 rounded-full">
+    {/* Shop All */}
+    <a
+      href="https://www.swarovski.com/en-IN/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[11px] uppercase tracking-[0.16em] text-[#111111] font-medium"
+    >
 
-      EXCLUSIVE
+      Shop All
 
-    </span>
+    </a>
 
   </div>
 
 
-  {/* Inline Toast */}
-  {couponToast && (
+  {/* Products Grid */}
+  <div className="grid grid-cols-2 gap-3">
 
-    <div className="mb-3 text-center text-xs text-[#2E1A47] bg-[#F7F5FA] border border-[#DDD5EA] rounded-xl py-2">
+    {/* Product 1 */}
+    <div className="bg-[#FAFAFA] border border-[#ECECEC] rounded-[24px] overflow-hidden">
 
-      ✓ Offer code copied
+      {/* Image */}
+      <div className="aspect-square bg-white flex items-center justify-center p-4">
+
+        <img
+          src="/images/design-mode/product-1.png"
+          alt="Swan Necklace"
+          className="w-full h-full object-contain"
+        />
+
+      </div>
+
+
+      {/* Content */}
+      <div className="p-4">
+
+        <div className="text-[14px] font-medium text-[#111111] leading-snug min-h-[38px]">
+
+          Swan Necklace
+
+        </div>
+
+        <div className="text-[14px] text-[#111111] mt-2">
+
+          ₹ 12,900.00
+
+        </div>
+
+
+        {/* CTA */}
+        <a
+          href="https://www.swarovski.com/en-IN/p-5469989/Swan-necklace-Swan-Pink-Rose-gold-tone-plated/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 flex items-center justify-center h-10 rounded-full bg-[#111111] text-white text-[11px] font-medium tracking-[0.08em] uppercase"
+        >
+
+          Shop Now
+
+        </a>
+
+      </div>
 
     </div>
 
-  )}
 
+    {/* Product 2 */}
+    <div className="bg-[#FAFAFA] border border-[#ECECEC] rounded-[24px] overflow-hidden">
 
-  {/* Offer Cards */}
-  <div className="space-y-3">
+      {/* Image */}
+      <div className="aspect-square bg-white flex items-center justify-center p-4">
 
-    {/* Offer 1 */}
-    <button
-      onClick={() => copyCoupon("ENCIRCLE750")}
-      className="w-full bg-[#F7F5FA] border border-[#E6E1EE] rounded-2xl p-4 text-left active:scale-[0.99] transition"
-    >
-
-      <div className="flex items-start justify-between gap-3">
-
-        <div>
-
-          <h4 className="text-sm font-semibold text-[#1F1B24]">
-
-            ₹750 Off on Premium Watches
-
-          </h4>
-
-          <p className="text-[11px] text-[#6B6475] mt-1 leading-relaxed">
-
-            Applicable on selected Titan and Edge collections above ₹9,999.
-
-          </p>
-
-
-          <div className="mt-3 inline-flex items-center bg-white border border-[#DDD5EA] rounded-lg px-2.5 py-1">
-
-            <span className="text-[10px] text-[#6B6475] mr-1">
-              Code:
-            </span>
-
-            <span className="text-[11px] font-bold tracking-wide text-[#2E1A47]">
-              ENCIRCLE750
-            </span>
-
-          </div>
-
-        </div>
-
-
-        <div className="w-11 h-11 rounded-xl bg-[#2E1A47]/10 flex items-center justify-center flex-shrink-0">
-
-          <Watch className="w-5 h-5 text-[#2E1A47]" />
-
-        </div>
+        <img
+          src="/images/design-mode/product-2.png"
+          alt="Curiosa Bangle Watch"
+          className="w-full h-full object-contain"
+        />
 
       </div>
 
-    </button>
 
+      {/* Content */}
+      <div className="p-4">
 
-    {/* Offer 2 */}
-    <button
-      onClick={() => copyCoupon("AIRA500")}
-      className="w-full bg-[#F7F5FA] border border-[#E6E1EE] rounded-2xl p-4 text-left active:scale-[0.99] transition"
-    >
+        <div className="text-[14px] font-medium text-[#111111] leading-snug min-h-[38px]">
 
-      <div className="flex items-start justify-between gap-3">
+          Curiosa Bangle Watch
 
-        <div>
+        </div>
 
-          <h4 className="text-sm font-semibold text-[#1F1B24]">
+        <div className="text-[14px] text-[#111111] mt-2">
 
-            Complimentary Smartwatch Strap
-
-          </h4>
-
-          <p className="text-[11px] text-[#6B6475] mt-1 leading-relaxed">
-
-            Receive an additional strap on selected Titan smartwatches.
-
-          </p>
-
-
-          <div className="mt-3 inline-flex items-center bg-white border border-[#DDD5EA] rounded-lg px-2.5 py-1">
-
-            <span className="text-[10px] text-[#6B6475] mr-1">
-              Code:
-            </span>
-
-            <span className="text-[11px] font-bold tracking-wide text-[#2E1A47]">
-              AIRA500
-            </span>
-
-          </div>
+          ₹ 53,000.00
 
         </div>
 
 
-        <div className="w-11 h-11 rounded-xl bg-[#C8A96B]/15 flex items-center justify-center flex-shrink-0">
+        {/* CTA */}
+        <a
+          href="https://www.swarovski.com/en-IN/p-M5724515/Curiosa-bangle-watch-Crystal-bracelet-Silver-tone-Stainless-steel/?variantID=5724515"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 flex items-center justify-center h-10 rounded-full bg-[#111111] text-white text-[11px] font-medium tracking-[0.08em] uppercase"
+        >
 
-          <Gift className="w-5 h-5 text-[#C8A96B]" />
+          Shop Now
 
-        </div>
+        </a>
 
       </div>
 
-    </button>
+    </div>
 
 
-    {/* Offer 3 */}
-    <button
-      onClick={() => copyCoupon("HELIOS15")}
-      className="w-full bg-[#F7F5FA] border border-[#E6E1EE] rounded-2xl p-4 text-left active:scale-[0.99] transition"
-    >
+    {/* Product 3 */}
+    <div className="bg-[#FAFAFA] border border-[#ECECEC] rounded-[24px] overflow-hidden">
 
-      <div className="flex items-start justify-between gap-3">
+      {/* Image */}
+      <div className="aspect-square bg-white flex items-center justify-center p-4">
 
-        <div>
-
-          <h4 className="text-sm font-semibold text-[#1F1B24]">
-
-            Extra 15% Off at Helios
-
-          </h4>
-
-          <p className="text-[11px] text-[#6B6475] mt-1 leading-relaxed">
-
-            Exclusive partner benefit for Titan Encircle members.
-
-          </p>
-
-
-          <div className="mt-3 inline-flex items-center bg-white border border-[#DDD5EA] rounded-lg px-2.5 py-1">
-
-            <span className="text-[10px] text-[#6B6475] mr-1">
-              Code:
-            </span>
-
-            <span className="text-[11px] font-bold tracking-wide text-[#2E1A47]">
-              HELIOS15
-            </span>
-
-          </div>
-
-        </div>
-
-
-        <div className="w-11 h-11 rounded-xl bg-[#2E1A47]/10 flex items-center justify-center flex-shrink-0">
-
-          <Sparkles className="w-5 h-5 text-[#2E1A47]" />
-
-        </div>
+        <img
+          src="/images/design-mode/product-3.png"
+          alt="Millenia Choker"
+          className="w-full h-full object-contain"
+        />
 
       </div>
 
-    </button>
+
+      {/* Content */}
+      <div className="p-4">
+
+        <div className="text-[14px] font-medium text-[#111111] leading-snug min-h-[38px]">
+
+          Millenia Choker
+
+        </div>
+
+        <div className="text-[14px] text-[#111111] mt-2">
+
+          ₹ 31,000.00
+
+        </div>
+
+
+        {/* CTA */}
+        <a
+          href="https://www.swarovski.com/en-IN/p-M5720486/Millenia-choker-Octagon-cut-Purple-Gold-tone-plated/?variantID=5720486"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 flex items-center justify-center h-10 rounded-full bg-[#111111] text-white text-[11px] font-medium tracking-[0.08em] uppercase"
+        >
+
+          Shop Now
+
+        </a>
+
+      </div>
+
+    </div>
+
+
+    {/* Product 4 */}
+    <div className="bg-[#FAFAFA] border border-[#ECECEC] rounded-[24px] overflow-hidden">
+
+      {/* Image */}
+      <div className="aspect-square bg-white flex items-center justify-center p-4">
+
+        <img
+          src="/images/design-mode/product-4.png"
+          alt="High iPhone 17 Pro Max Smartphone Case"
+          className="w-full h-full object-contain"
+        />
+
+      </div>
+
+
+      {/* Content */}
+      <div className="p-4">
+
+        <div className="text-[14px] font-medium text-[#111111] leading-snug min-h-[38px]">
+
+          High iPhone 17 Pro Max Smartphone Case
+
+        </div>
+
+        <div className="text-[14px] text-[#111111] mt-2">
+
+          ₹ 11,900.00
+
+        </div>
+
+
+        {/* CTA */}
+        <a
+          href="https://www.swarovski.com/en-IN/p-M5731151/High-smartphone-case-Flat-Back-crystals-iPhone-17-Pro-Max-Silver-tone/?variantID=5731145"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 flex items-center justify-center h-10 rounded-full bg-[#111111] text-white text-[11px] font-medium tracking-[0.08em] uppercase"
+        >
+
+          Shop Now
+
+        </a>
+
+      </div>
+
+    </div>
 
   </div>
-
-
-  {/* CTA */}
-  <a
-    href="https://www.titanencircle.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-
-    <button className="w-full mt-5 bg-[#2E1A47] text-white h-11 text-sm font-semibold rounded-2xl transition active:scale-[0.98] hover:opacity-95">
-
-      Explore Member Benefits
-
-    </button>
-
-  </a>
-
-
-  {/* Footer */}
-  <p className="mt-3 text-[10px] text-center text-[#6B6475] leading-relaxed px-4">
-
-    Personalized benefits may vary based on membership tier, brand and purchase history.
-
-  </p>
 
 </div>
 
