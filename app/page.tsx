@@ -2873,12 +2873,6 @@ Powered by RDEP
 
         </h3>
 
-        <div className="text-[13px] text-[#666666] mt-1">
-
-          Access and manage your digital Swarovski receipt
-
-        </div>
-
       </div>
 
     </div>
@@ -3000,12 +2994,6 @@ Powered by RDEP
           Customer Support
 
         </h3>
-
-        <div className="text-[13px] text-[#666666] mt-1">
-
-          Connect with Swarovski support and boutique assistance
-
-        </div>
 
       </div>
 
