@@ -3098,28 +3098,28 @@ Powered by RDEP
 </div>
           
       {/* Social Media & Store Details */}
-<div className="bg-white rounded-2xl border border-[#E6E1EE] shadow-md mx-3 mt-4 p-4">
+<div className="bg-white rounded-[28px] border border-[#E8E8E8] shadow-sm mx-3 mt-4 p-4">
 
   {/* Header */}
-  <div className="flex items-center mb-4">
+  <div className="flex items-center mb-5">
 
-    <div className="bg-[#2E1A47] p-2.5 rounded-xl mr-3 shadow-sm">
+    <div className="bg-[#111111] p-2.5 rounded-2xl mr-3">
 
-      <Share2 className="h-4 w-4 text-[#C8A96B]" />
+      <Share2 className="h-4 w-4 text-white" />
 
     </div>
 
     <div>
 
-      <h3 className="text-sm font-semibold text-[#1F1B24]">
+      <h3 className="text-[18px] font-light text-[#111111] tracking-[0.01em]">
 
         Stay Connected
 
       </h3>
 
-      <div className="text-[11px] text-[#6B6475] mt-0.5">
+      <div className="text-[13px] text-[#666666] mt-1">
 
-        Follow Titan for latest launches and collections
+        Follow Swarovski for collections, launches, and inspiration
 
       </div>
 
@@ -3134,18 +3134,18 @@ Powered by RDEP
     {/* Instagram */}
     <button
       onClick={() =>
-        handleSocialLink("https://www.instagram.com/titanwatchesindia/")
+        handleSocialLink("https://www.instagram.com/swarovski/")
       }
       className="flex flex-col items-center"
     >
 
-      <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 flex items-center justify-center mb-1.5 shadow-sm">
+      <div className="w-11 h-11 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 flex items-center justify-center mb-2 shadow-sm">
 
         <Instagram className="h-4 w-4 text-white" />
 
       </div>
 
-      <span className="text-[11px] font-medium text-[#1F1B24]">
+      <span className="text-[11px] font-medium text-[#111111]">
 
         Instagram
 
@@ -3157,18 +3157,18 @@ Powered by RDEP
     {/* Facebook */}
     <button
       onClick={() =>
-        handleSocialLink("https://www.facebook.com/titanwatches/")
+        handleSocialLink("https://www.facebook.com/SWAROVSKI.global/")
       }
       className="flex flex-col items-center"
     >
 
-      <div className="w-10 h-10 rounded-full bg-[#1877F2] flex items-center justify-center mb-1.5 shadow-sm">
+      <div className="w-11 h-11 rounded-full bg-[#1877F2] flex items-center justify-center mb-2 shadow-sm">
 
         <Facebook className="h-4 w-4 text-white" />
 
       </div>
 
-      <span className="text-[11px] font-medium text-[#1F1B24]">
+      <span className="text-[11px] font-medium text-[#111111]">
 
         Facebook
 
@@ -3180,18 +3180,18 @@ Powered by RDEP
     {/* Website */}
     <button
       onClick={() =>
-        handleSocialLink("https://www.titan.co.in/")
+        handleSocialLink("https://www.swarovski.com/en-IN/")
       }
       className="flex flex-col items-center"
     >
 
-      <div className="w-10 h-10 rounded-full bg-[#2E1A47] flex items-center justify-center mb-1.5 shadow-sm">
+      <div className="w-11 h-11 rounded-full bg-[#111111] flex items-center justify-center mb-2 shadow-sm">
 
         <ExternalLink className="h-4 w-4 text-white" />
 
       </div>
 
-      <span className="text-[11px] font-medium text-[#1F1B24]">
+      <span className="text-[11px] font-medium text-[#111111]">
 
         Website
 
@@ -3203,18 +3203,18 @@ Powered by RDEP
 
 
   {/* Store Details */}
-  <div className="text-xs text-[#6B6475] text-center mb-3 bg-[#F7F5FA] border border-[#E6E1EE] p-4 rounded-2xl">
+  <div className="text-[12px] text-[#666666] text-center mb-4 bg-[#FAFAFA] border border-[#ECECEC] p-4 rounded-[24px]">
 
     <button
       onClick={() => setShowStoreLocation(!showStoreLocation)}
-      className="w-full flex items-center justify-center mb-2 hover:text-[#2E1A47] transition-colors"
+      className="w-full flex items-center justify-center mb-2 hover:text-[#111111] transition-colors"
     >
 
-      <MapPin className="h-3.5 w-3.5 mr-1.5 text-[#C8A96B]" />
+      <MapPin className="h-3.5 w-3.5 mr-2 text-[#111111]" />
 
-      <span className="font-semibold text-[#2E1A47]">
+      <span className="font-medium text-[#111111]">
 
-        Titan World • MG Road Bengaluru{" "}
+        Swarovski Boutique • Bengaluru{" "}
 
         {showStoreLocation ? "▲" : "▼"}
 
@@ -3225,45 +3225,35 @@ Powered by RDEP
 
     {showStoreLocation && (
 
-      <div className="space-y-1 leading-relaxed">
+      <div className="space-y-1.5 leading-relaxed">
 
-        <p className="font-semibold text-[#1F1B24]">
+        <p className="font-medium text-[#111111]">
 
-          Titan World - MG Road Bangalore
+          Swarovski Boutique - Garuda Mall Bengaluru
 
         </p>
 
         <p>
-          Shop No. 77 & 78, Mahatma Gandhi Road
+          Unit No. 107, First Floor, Garuda Mall
         </p>
 
         <p>
-          Beside Deccan Herald, Haridevpur
+          Magrath Road, Ashok Nagar
         </p>
 
         <p>
-          Shanthala Nagar, Shivaji Nagar
+          Bengaluru, Karnataka 560025
         </p>
 
-        <p>
-          Bengaluru, Karnataka 560001
-        </p>
+        <p className="mt-3 text-[11px]">
 
-        <p className="mt-3 text-[10px]">
-
-          Titan Company Limited
+          Swarovski India Pvt. Ltd.
 
         </p>
 
-        <p className="text-[10px]">
+        <p className="mt-2 text-[#111111] font-medium">
 
-          CIN: L74999TN1984PLC010856
-
-        </p>
-
-        <p className="mt-2 text-[#2E1A47] font-semibold">
-
-          Store Associate: {currentReceipt.associate}
+          Boutique Associate: {currentReceipt.associate}
 
         </p>
 
@@ -3276,7 +3266,7 @@ Powered by RDEP
 
   {/* Terms */}
   <button
-    className="w-full text-xs text-[#6B6475] hover:text-[#2E1A47] h-6 font-medium transition-colors"
+    className="w-full text-[12px] text-[#666666] hover:text-[#111111] h-6 font-medium transition-colors"
     onClick={() => setShowTerms(!showTerms)}
   >
 
@@ -3287,26 +3277,26 @@ Powered by RDEP
 
   {showTerms && (
 
-    <div className="text-[11px] text-[#6B6475] mt-3 space-y-2 px-2 leading-relaxed">
+    <div className="text-[11px] text-[#666666] mt-4 space-y-3 px-2 leading-relaxed">
 
       <p>
-        • Titan Encircle membership benefits are subject to program terms and eligibility.
+        • Swarovski Club benefits and tier eligibility are subject to program terms and qualifying purchases.
       </p>
 
       <p>
-        • Personalized offers may vary based on membership tier and purchase history.
+        • Product availability, promotions, and member experiences may vary across boutiques and digital channels.
       </p>
 
       <p>
-        • Prices displayed are inclusive of applicable GST.
+        • Prices displayed are inclusive of applicable taxes unless otherwise specified.
       </p>
 
       <p>
-        • Warranty coverage varies by product category and model.
+        • Warranty and care support vary depending on product category and usage conditions.
       </p>
 
       <p>
-        • For support visit titan.co.in or contact Titan Customer Care.
+        • Please retain this digital receipt as proof of purchase for future service or warranty assistance.
       </p>
 
     </div>
@@ -3315,11 +3305,11 @@ Powered by RDEP
 
 
   {/* Powered by RDEP */}
-  <div className="text-center mt-4 pt-4 border-t border-[#F0EDF5]">
+  <div className="text-center mt-5 pt-4 border-t border-[#F1F1F1]">
 
     <div className="flex items-center justify-center space-x-1.5">
 
-      <span className="text-xs text-[#9B94A8] font-medium">
+      <span className="text-[12px] text-[#999999] font-medium">
 
         Powered by
 
